@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Kingshot Tool — Explorateur aérien",
+  "short_name": "Kingshot Tool",
+  "description": "Explorateur aérien gratuit du royaume Kingshot 690.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#122846",
+  "theme_color": "#122846",
+  "icons": [
+    {
+      "src": "./assets/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
