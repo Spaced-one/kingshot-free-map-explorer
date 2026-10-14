@@ -1,0 +1,2212 @@
+[
+  {
+    "name": "Château Royal · building2001",
+    "category": "Château Royal",
+    "file": "./assets/building2001-rgba-source-known.png",
+    "size": [
+      1146,
+      1238
+    ],
+    "format": "RGBA · encodage corroboré",
+    "kind": "Image 2D originale",
+    "note": "Silhouette complète, roche et cascade. 26 lignes de marge transparente exclues ; pivot et assemblage natifs non établis.",
+    "png_sha256": "c9112638c9db527206df469be3230325979551167f0f10abbb72d3010b56ac0c"
+  },
+  {
+    "name": "Sol, pavés et remparts · surface2001",
+    "category": "Château Royal",
+    "file": "./assets/royal-ground-source-known.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "format": "ASTC6 · encodage corroboré",
+    "kind": "Texture de sol originale",
+    "note": "Pixels tous connus. Projection calibrée sur les quatre socles ; shaders et transforms natifs non reproduits.",
+    "png_sha256": "4324f7931a7adf3b4a7701d72143a70328fabaa2460da9be7982e9ff52b524d7"
+  },
+  {
+    "name": "building2101",
+    "category": "Bâtiments",
+    "file": "./assets/recovered/building2101-6d507b4f3a9240a8.png",
+    "size": [
+      1120,
+      806
+    ],
+    "format": "RGBA32",
+    "kind": "Image 2D liée au Sprite",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Liaison Sprite pleine image corroborée.",
+    "png_sha256": "6d507b4f3a9240a8a3b8d352897ff5d9cf2632d41c3973083dfdbb59d1b6e80d"
+  },
+  {
+    "name": "building2201",
+    "category": "Bâtiments",
+    "file": "./assets/recovered/building2201-03c8ba9078c3a56e.png",
+    "size": [
+      1024,
+      832
+    ],
+    "format": "RGBA32",
+    "kind": "Image 2D liée au Sprite",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Liaison Sprite pleine image corroborée.",
+    "png_sha256": "03c8ba9078c3a56e4e0b89c0cf05e9af1aa1abebd1b0433b3eba66af9c840628"
+  },
+  {
+    "name": "building2304",
+    "category": "Bâtiments",
+    "file": "./assets/recovered/building2304-2d7dee6639b52bc6.png",
+    "size": [
+      532,
+      463
+    ],
+    "format": "RGBA32",
+    "kind": "Image 2D liée au Sprite",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Liaison Sprite pleine image corroborée.",
+    "png_sha256": "2d7dee6639b52bc61df1cebaa69228f9f2b29efb6abbe10be5a08245a2c9871b"
+  },
+  {
+    "name": "Default-ParticleSystem",
+    "category": "Autres textures",
+    "file": "./assets/recovered/Default-ParticleSystem-e4a1e48db3c80dd5.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "RGBA32",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "e4a1e48db3c80dd59299f848ab733640d8527e15b0ed9848e8e746cb27dec332"
+  },
+  {
+    "name": "Particle_Smoke_Dissolve_01",
+    "category": "Autres textures",
+    "file": "./assets/recovered/Particle_Smoke_Dissolve_01-5c60ba6d6db23233.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5c60ba6d6db23233fd3dfc9729e892383a9171319639fe37fb9ff2b104170502"
+  },
+  {
+    "name": "capitalwarning 2",
+    "category": "Autres textures",
+    "file": "./assets/recovered/capitalwarning_2-c4ee69d6e72c13e5.png",
+    "size": [
+      90,
+      90
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c4ee69d6e72c13e5486260d3c1d0361a3884123f1554f0b1e2e812cc7871a031"
+  },
+  {
+    "name": "fire",
+    "category": "Autres textures",
+    "file": "./assets/recovered/fire-ad65f5d4f7da8052.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ad65f5d4f7da8052422e7cdb1f1fc8c2538cc5cf95fcf811a4499a516abb4579"
+  },
+  {
+    "name": "march_3d_feast_01_color",
+    "category": "Autres textures",
+    "file": "./assets/recovered/march_3d_feast_01_color-61277328863fdd40.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "61277328863fdd401f7e6d4e6216e79ede4f1063f57b3025f908a3b704c0d1de"
+  },
+  {
+    "name": "mask006",
+    "category": "Autres textures",
+    "file": "./assets/recovered/mask006-50a0baf7479c0de7.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "50a0baf7479c0de738dd8811741fca9e14fc911d752ec13b8b50467aebc50848"
+  },
+  {
+    "name": "sactx-0-1024x2048-ASTC 6x6-world_soldier_jingjian-eaddc0f6",
+    "category": "Autres textures",
+    "file": "./assets/recovered/sactx-0-1024x2048-ASTC_6x6-world_soldier_jingjian-eaddc0f6-b5c93fe26a271afa.png",
+    "size": [
+      1024,
+      2048
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "b5c93fe26a271afa6d7b6718993f0daa046bf49ee67420e7c8c6998e7e7b8bea"
+  },
+  {
+    "name": "t_building_feast_07",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_building_feast_07-cd837ec789d6a2bf.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_4x4",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "cd837ec789d6a2bf13500f200efb216cccf85c5b7f8ec36d57ca922a743de77f"
+  },
+  {
+    "name": "t_monster_rose_wendigo_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_monster_rose_wendigo_d-4468c61e2d5f047a.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "4468c61e2d5f047a7d38f9cc8d158ebc0137413369ba56414c4e791dc9f9a8cb"
+  },
+  {
+    "name": "t_monster_scarlet_predator_huanse_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_monster_scarlet_predator_huanse_d-29f8cfa9677bd37f.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "29f8cfa9677bd37f94c28e202cf035a1f6e3101e486db701fab728d46b77a863"
+  },
+  {
+    "name": "t_simple_giant_airship",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_simple_giant_airship-cdc2209adcb880be.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "cdc2209adcb880be8bac6796fd1bb437a7ba7fe36444b363919487f934fabff5"
+  },
+  {
+    "name": "t_world_building_bouncingpumpkin_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_building_bouncingpumpkin_d-ab09378e0c6b34de.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA32",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ab09378e0c6b34def9433c9688312056f5d1cddca0088d1f3a2348c715ee564c"
+  },
+  {
+    "name": "t_world_building_clownbox_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_building_clownbox_d-98631353efc81b11.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_4x4",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "98631353efc81b11983699f892fb139431628737474924b358c3dc6f1079ccd2"
+  },
+  {
+    "name": "t_world_march_skin_dragon_carriage",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_march_skin_dragon_carriage-cb41f5a46b6d4c2b.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "cb41f5a46b6d4c2ba2b0fa434e383dc594d6871eab9acb9156ea43e71bbec454"
+  },
+  {
+    "name": "t_world_march_skin_fire_dragon_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_march_skin_fire_dragon_d-71f57b21908c4191.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "71f57b21908c4191e3dde611a44007463759a2bc8c4c2a83da5f4c342df977b1"
+  },
+  {
+    "name": "t_world_march_skin_snowvehicleI_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_march_skin_snowvehicleI_d-bdc7df19202a4423.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "bdc7df19202a4423b40e57be64fb7a928fcdb4c0d931dd5eaa09bef1a65e6e88"
+  },
+  {
+    "name": "t_world_monster_013",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_013-32a361a9c9a37a47.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "32a361a9c9a37a47522de80cbbac5440c81353e53e2afe08545f5a688deafe8f"
+  },
+  {
+    "name": "t_world_monster_015",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_015-0d543578f0faa76d.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "0d543578f0faa76d08c212501f7d260bbe7d8c95ee16a7dbd4dcd1e1aff3bb48"
+  },
+  {
+    "name": "t_world_monster_025",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_025-e279981463297f98.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "e279981463297f98b39308829d744b9d042cd5f5d06b28ef577c12c700dc76b0"
+  },
+  {
+    "name": "t_world_monster_030_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_030_d-10333815313a01c2.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "10333815313a01c257093af4c4dd7562ba18b4e0ec41dce0875802cf905c7156"
+  },
+  {
+    "name": "t_world_monster_031_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_031_d-1d13085ccc7a5563.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "1d13085ccc7a55634fc83aa40226f39dddd37f4d8f7163e029e0fdfe73ac5f59"
+  },
+  {
+    "name": "t_world_monster_033_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_033_d-d5ed98d0dbf5c5c9.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "d5ed98d0dbf5c5c959c317262a06c383fabb10b41b7fb2eeeabd13b16fdf591b"
+  },
+  {
+    "name": "t_world_monster_035_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_035_d-bc1c9ff9295c5257.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "bc1c9ff9295c525789b4fac6846e31df0e522250526cdfd36b77d87bcbddeab7"
+  },
+  {
+    "name": "t_world_monster_got_001_d",
+    "category": "Autres textures",
+    "file": "./assets/recovered/t_world_monster_got_001_d-4490fc8914db2ee6.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "4490fc8914db2ee6ed1123b1e349018e335eb8e4e44005080384bbdeae74e59a"
+  },
+  {
+    "name": "tex_wenli_wj_02",
+    "category": "Autres textures",
+    "file": "./assets/recovered/tex_wenli_wj_02-4df76ecce5e30062.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "4df76ecce5e3006254800548a6e21a1c66a16342e5b7d93601f4b9e79ee1c8bb"
+  },
+  {
+    "name": "world_monster_010",
+    "category": "Autres textures",
+    "file": "./assets/recovered/world_monster_010-2bb46ce2bec217ec.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "2bb46ce2bec217ecf61525bb76a25892fd77b8b6233dc9a4cc0f232da53c6fb3"
+  },
+  {
+    "name": "effect_shu001",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/effect_shu001-50c877bb41b5a18e.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "50c877bb41b5a18e12474670fe8e3ea88cf31c6173030f5df048e2b2245f2568"
+  },
+  {
+    "name": "fx_dress_2024xinnian_gx_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_dress_2024xinnian_gx_02-fbe09c46b1399266.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "fbe09c46b1399266926f4bcf59c1856ef6baba8efa61bffeeb18f4ccf88a44c7"
+  },
+  {
+    "name": "fx_hero_50012",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_hero_50012-18f9ddd4c26c1358.png",
+    "size": [
+      128,
+      32
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "18f9ddd4c26c1358535b1943e64301847a77aa07bdab412ffcfb5bbd3a926128"
+  },
+  {
+    "name": "fx_m_tex_march_snowvehicle_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_m_tex_march_snowvehicle_01-9db80a1789cce208.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9db80a1789cce208ec06a3c5fa8541b62221c6eeb8c42ea39257112b8228ca03"
+  },
+  {
+    "name": "fx_pve_hero_gwen_gx_05",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_pve_hero_gwen_gx_05-b2490a2e65253a98.png",
+    "size": [
+      128,
+      32
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "b2490a2e65253a98cff57da5f9ebaf3a0f7614f8f5fa9a63d4bca197c5d473f1"
+  },
+  {
+    "name": "fx_pve_hero_level01_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_pve_hero_level01_jxm-ac8db4d02220c6f3.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ac8db4d02220c6f3e5c6a3999099e85efefcee6fac41dff0955c55534a23493f"
+  },
+  {
+    "name": "fx_pve_hero_norah_gx_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_pve_hero_norah_gx_02-aa48ac9c3ea7a41f.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "aa48ac9c3ea7a41fb7232fe5a369d0a2e8e1d2ad152afa045e2fc0d4b316596b"
+  },
+  {
+    "name": "fx_tex_3d_monster_rose_wendigo_lw01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_3d_monster_rose_wendigo_lw01-e39fb947f2cf488e.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "e39fb947f2cf488e8c9f7c2c89bad19e258ebfe03cb87a4d15b20ed19649d288"
+  },
+  {
+    "name": "fx_tex_3d_monster_rose_wendigo_lw02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_3d_monster_rose_wendigo_lw02-1fbb15960b28ab42.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "1fbb15960b28ab429a274cc3e08db6dfd8baeee09086e1d6ee34f61c176aabc5"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_03",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_03-29990a3dfd730fc5.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "29990a3dfd730fc5267cd224e0313ae24b0932c340e0a246300e9d68b7d4515e"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_08",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_08-22a20107ef191bd4.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "22a20107ef191bd445f65c38958d5cacf58101e799e7b5d345ae082642244f72"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_09",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_09-03f8bf8b82ae8431.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "03f8bf8b82ae843169fcb6c1c6f086daebece10ebddd23061583cc584b6bca87"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_11",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_11-5926f4b6a9dcc642.png",
+    "size": [
+      128,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5926f4b6a9dcc6421116e24946280aa4dee6eff7bedc2972b8b02317c7ab377f"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_12",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_12-3fe6c0960095a1e0.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "3fe6c0960095a1e04a14a4e287f70790b36ec5e986081fcf2a706d1955f737a8"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_14",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_14-47aba5ac7553952e.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "47aba5ac7553952e8b6bfe422109d8aa1d8d2355f649594a6ac042d86d7e72bb"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_21",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_21-94fdbe9f399a2484.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "94fdbe9f399a2484c3831a061ddffb91d38dbbe37b280741225412f9f89c9c3d"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_24",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_24-364eaa5d9877ba6e.png",
+    "size": [
+      128,
+      32
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "364eaa5d9877ba6ea2a6d801d3c40136e9a4bf06712b9d37da6519075185c80c"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_25",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_25-cec873c9ab65daba.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "cec873c9ab65daba6d1644c752aa6bb3454f9020ba21576af7cac7ebe2a509df"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_28",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_28-2f22b7cb39cd0e19.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "2f22b7cb39cd0e19db6f70caef3317ad8775e8596dc885a543ca98b6962a1bb6"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_37",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_37-a77fd3a943138559.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "a77fd3a943138559edc1a8a22d9a6bd44ff0b57e24ef675a5a0885ebd1e02914"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_41",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_41-9181fc6c1f78ae7a.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9181fc6c1f78ae7af84a4ea396843a8a8adf7b2750b0d3e92262e59273d19402"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_42",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_42-6df562e7bdb63d61.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "6df562e7bdb63d61ba01b7f03ea22b2abf3306a9bd52417f08e3c682a92a54d9"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_46",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_46-3a37271229a88235.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "3a37271229a88235e735bb49d4f031c8abfeba613dea96273e15471525e3f6b7"
+  },
+  {
+    "name": "fx_tex_Childrens2026_xqc_51",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_Childrens2026_xqc_51-647b056538acb260.png",
+    "size": [
+      64,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "647b056538acb26041b6589c64b6e9f9d8212822b6dd998f3d27e0590d9eb5ca"
+  },
+  {
+    "name": "fx_tex_ThreeAlliancesWar_mask02_c_xf",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_ThreeAlliancesWar_mask02_c_xf-702fae6f04e7f4cb.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "702fae6f04e7f4cb4de444ff6c1744eb9390bf73861c39a82f2c787a70beedb4"
+  },
+  {
+    "name": "fx_tex_alliance_safe_mine_04_lw01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_alliance_safe_mine_04_lw01-aae61bb8579e5d58.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "aae61bb8579e5d58d6900069ef7a355e6f22452724771248099538daa6fbc601"
+  },
+  {
+    "name": "fx_tex_anniversary2025_xqc_001",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_anniversary2025_xqc_001-580cbd7da5d5601c.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "580cbd7da5d5601cef4060cc63520db395e9c764d890bf68c85ef326158d4351"
+  },
+  {
+    "name": "fx_tex_anniversary2025_xqc_002",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_anniversary2025_xqc_002-0f1177137695a014.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "0f1177137695a0144762677cf491dac8f93d281e50025d26b8a745e1f76cff18"
+  },
+  {
+    "name": "fx_tex_anniversary2025_xqc_004",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_anniversary2025_xqc_004-5588bdbd0f084cbb.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5588bdbd0f084cbb7562ab77010fb04754f8eba018d71f0ad6874b40d423baf2"
+  },
+  {
+    "name": "fx_tex_anniversary_1st_yanhua02_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_anniversary_1st_yanhua02_wwj-fa574683f4f6e5a8.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "fa574683f4f6e5a8e28d86fa289c307ec36ffa7de9c810e348faff559727159a"
+  },
+  {
+    "name": "fx_tex_arsenalwar_gx_03_1",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_arsenalwar_gx_03_1-c2c597a5fae44d5a.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c2c597a5fae44d5ae499c05fe55d53e620525406a4106fc222970bf608b79d32"
+  },
+  {
+    "name": "fx_tex_arsenalwar_gx_07",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_arsenalwar_gx_07-dcb09d1cc5928b98.png",
+    "size": [
+      128,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "dcb09d1cc5928b9881694b12921ba7bc4e224c5de0fb3d30ae5f7e84a22f102a"
+  },
+  {
+    "name": "fx_tex_battle_hero_50015_elva_lwr_004",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_battle_hero_50015_elva_lwr_004-5ecc98d2e9eea13e.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5ecc98d2e9eea13e969a367f52ff9c06d0a623ebcccf655325e37ab6a502dcd4"
+  },
+  {
+    "name": "fx_tex_building2101_lighting_flash",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building2101_lighting_flash-63166ffeb65c926a.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "63166ffeb65c926a1f78cbf68272412eb906c4106dfa663b04a1c8b40882eb2a"
+  },
+  {
+    "name": "fx_tex_building_feast_07_bjx002",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building_feast_07_bjx002-52a819919aff07bd.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "52a819919aff07bdfc8586dce086727e73fbab3dcc1d7f6247de0666a0b00715"
+  },
+  {
+    "name": "fx_tex_building_feast_07_xqc001",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building_feast_07_xqc001-7fe1fdbb460c8ccf.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7fe1fdbb460c8ccf110b118c09cbc873098226440bda4d785b652dab322e987f"
+  },
+  {
+    "name": "fx_tex_building_feast_07_xqc002",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building_feast_07_xqc002-d63cd2607ec8176f.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "d63cd2607ec8176f0d8149829786e0bcc0874e496df4f5a956768560c9190b9c"
+  },
+  {
+    "name": "fx_tex_building_feast_07_xqc003",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building_feast_07_xqc003-61a7fa9daad6e8ec.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "61a7fa9daad6e8ec1be7906b1ba20c869153f7084e66f297dcda3d54a1bae8f6"
+  },
+  {
+    "name": "fx_tex_building_feast_07_xqc004",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building_feast_07_xqc004-13bb0337eeec4b81.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "13bb0337eeec4b81f1a3865af61faa35a42a2a96ec074a2fddd31e52081243e2"
+  },
+  {
+    "name": "fx_tex_building_feast_07_xqc005",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_building_feast_07_xqc005-7b711b8b185f1cb8.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7b711b8b185f1cb8f70f6ac626133c108dfd848a9808c1f989ffc7b7167604d7"
+  },
+  {
+    "name": "fx_tex_castle_dress_yanhua01_lsg",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_castle_dress_yanhua01_lsg-8403c55a05c93fae.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "8403c55a05c93faee81c9cb7b1470c4bdca2174ce3d391ac6e5943f0a90399ea"
+  },
+  {
+    "name": "fx_tex_castle_dress_yanhua02_lsg",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_castle_dress_yanhua02_lsg-177e6af0d420bac3.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "177e6af0d420bac3c72d1dc97020b4ad6997d2f0e02fd674c74f61791e02f1f2"
+  },
+  {
+    "name": "fx_tex_city_furnace_frozenplanet19_yly",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_city_furnace_frozenplanet19_yly-d2770d46a6481d38.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "d2770d46a6481d3882d559d9bbf7699f931bb97aff1cdb62a253eebad73de72a"
+  },
+  {
+    "name": "fx_tex_dilie_dkb_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dilie_dkb_01-bb801fccd5e62f46.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "bb801fccd5e62f46b6d793887cbc89370599dc2a7e9c51baa0e393e98a8626b8"
+  },
+  {
+    "name": "fx_tex_dress_cwyanhua_1st03_yly",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_cwyanhua_1st03_yly-bb78b7f9293929ff.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "bb78b7f9293929ff212bfe8ccaa7cc5713981dc7a20358465eeeefffff26e818"
+  },
+  {
+    "name": "fx_tex_dress_cwyanhua_1st05_yly",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_cwyanhua_1st05_yly-77f5515dd3eaa657.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "77f5515dd3eaa657bba6d5e5ab5b79c4112d09648f2239a0162b5e7d6b298446"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_moon02_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_moon02_wwj-ce84abb51512a00a.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ce84abb51512a00a0eb94f0875f7acc085b5bd00ad52a80104442488eed1839c"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_moon_glow_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_moon_glow_wwj-e997d20b8f2393ac.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "e997d20b8f2393ac90f51f946679b847549ea0477cfd14ca5d7cbc02e842709d"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_moon_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_moon_wwj-82a35014ade416c8.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "82a35014ade416c8372ec42e292930ba574828b9a099f0f8994b9339c40286f4"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_yun01_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_yun01_wwj-a5313721c6d73193.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "a5313721c6d73193844f3d649df091597f7fe075fc05381da20f4a19be0ec26f"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_yun02_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_yun02_wwj-5cbbe4f4823a8674.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5cbbe4f4823a86743a673050b9fa38ea48a1df15efab03f9c71f41e124e9b0e8"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_yun03_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_yun03_wwj-e92248e173da11b3.png",
+    "size": [
+      512,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "e92248e173da11b3adc6a57c4d7936a2a9b10ff409f5f33614999e17df049012"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_yun04_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_yun04_wwj-13832736b9cdbfd7.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "13832736b9cdbfd72e78ebe74e4733deeab7c53b94f112fbaeeea1e4b1ef23c1"
+  },
+  {
+    "name": "fx_tex_dress_mid_autumn_yun05a_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_dress_mid_autumn_yun05a_wwj-3bb44b8210aa43ba.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "3bb44b8210aa43ba41caf5baf06d0769730108272541223a195ae61c66eecdb4"
+  },
+  {
+    "name": "fx_tex_futou_ddt_fjl",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_futou_ddt_fjl-5a723d1f6cd28051.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5a723d1f6cd28051770366e99e52e2b6038be91f848e643f7add397bacfa5326"
+  },
+  {
+    "name": "fx_tex_glow_38_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_glow_38_02-44ccb5c087996cb9.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "44ccb5c087996cb954ea3210c346703ed95e7aeb6c33c501b1ce226765fee627"
+  },
+  {
+    "name": "fx_tex_hero_fisher_attack_hook_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_hero_fisher_attack_hook_jxm-93368467ec8831e4.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "93368467ec8831e4a58edafbef7486b2d94aa4063250b8030221d4c36a2841ce"
+  },
+  {
+    "name": "fx_tex_march_aixin_bian_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_aixin_bian_jxm-7ee10692e19b2d5a.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7ee10692e19b2d5a308bb332d4871077555e5ee4150902efaac06840035d7a6e"
+  },
+  {
+    "name": "fx_tex_march_cupid_aixin02_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_aixin02_jxm-aac62c27ce5ab936.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "aac62c27ce5ab93653c4d37bb8dec68d8d91c4bd1e833d6a29367ed788441b82"
+  },
+  {
+    "name": "fx_tex_march_cupid_aixin03_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_aixin03_jxm-2cb34f5122623cfe.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "2cb34f5122623cfed5ee439ccca8ec073c861bf764cab0f4eb58e8b341fb6b94"
+  },
+  {
+    "name": "fx_tex_march_cupid_aixin05_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_aixin05_jxm-404206863f6a557c.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "404206863f6a557c0c9d9d633b685acd316bcc6ef3a947bab6bec2df913c3f50"
+  },
+  {
+    "name": "fx_tex_march_cupid_base01_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_base01_jxm-110fceb0e75b499d.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "110fceb0e75b499dc86919619555ff5b84875406caf1a4e3f42d21e2c3d16a5a"
+  },
+  {
+    "name": "fx_tex_march_cupid_jian01_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_jian01_jxm-b1cf3c4f3685fa75.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "b1cf3c4f3685fa759f697b19804876a3a811cbd7094de4d62a94bf428a1995ed"
+  },
+  {
+    "name": "fx_tex_march_cupid_jianbian01_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_jianbian01_jxm-9b4c4f806573a62a.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9b4c4f806573a62aa40a99a154c02c03a529d35548f952c57f91dd918673d98a"
+  },
+  {
+    "name": "fx_tex_march_cupid_mask01_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_cupid_mask01_jxm-748050cb3a4f0875.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "748050cb3a4f0875d187d8aa40b1b9ae4fe068e2e50dc6ce031c8a2311a03d68"
+  },
+  {
+    "name": "fx_tex_march_hero_50039_liantiao_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_hero_50039_liantiao_01-11705a139b7b5427.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "11705a139b7b54270a74f6b728d0e824ef99db04ad952a3e8a6f6abb3b46c483"
+  },
+  {
+    "name": "fx_tex_march_skin_dragon_carriage_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_march_skin_dragon_carriage_01-203a4905c568fee0.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "203a4905c568fee009593e3c94c51d343d046b838a68174bdcd446cd54641401"
+  },
+  {
+    "name": "fx_tex_mask_25",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_25-c7f9b73a98ace26c.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c7f9b73a98ace26c922ab374d7c235a2d5254bcce9cbcb0c12dc571eac5fee35"
+  },
+  {
+    "name": "fx_tex_mask_39",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_39-0a3b86e010b3ac28.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "0a3b86e010b3ac28bfb6fa96563bfc44f54e97600180fe828e7c9582c7339ebe"
+  },
+  {
+    "name": "fx_tex_mask_41",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_41-db255382c8e7b693.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "db255382c8e7b693d785321fc85c991ffa53e6f1cbb6a756e20fc232aa2948cd"
+  },
+  {
+    "name": "fx_tex_mask_43",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_43-463e5cdb43704c18.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "463e5cdb43704c18a8a90d6138a3e2bccc5af6feb9313b64f8993ffd806bb5d9"
+  },
+  {
+    "name": "fx_tex_mask_dkb_86_f",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_dkb_86_f-acda2c1ebaf90f84.png",
+    "size": [
+      128,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "acda2c1ebaf90f84b146766c8ce9cfd3fcc882573c3b724224893bdc004bdfe4"
+  },
+  {
+    "name": "fx_tex_mask_dkb_88 1",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_dkb_88_1-362c158e024f43a3.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "362c158e024f43a33849bfbe4e680bd067f3ef052cc4445a9bc4c4be19c03b7c"
+  },
+  {
+    "name": "fx_tex_mask_dkb_89_f",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_mask_dkb_89_f-5db3f6efb0ca8965.png",
+    "size": [
+      128,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "5db3f6efb0ca89651174889776a4a2c3a96ff3a04c32d2f4f3ab71a3d8fd7d08"
+  },
+  {
+    "name": "fx_tex_plot_smoke_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_plot_smoke_wwj-3b9debb8b3aec7e1.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "3b9debb8b3aec7e18ebefd11c3195fc7075f2ccd4f297148f94c40dde758e746"
+  },
+  {
+    "name": "fx_tex_pve630_snowball01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_pve630_snowball01-1bb95863488a22eb.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "1bb95863488a22eb935e686b3da49264d0a3bc429608672f2d9cfbca7f4db4a3"
+  },
+  {
+    "name": "fx_tex_pve_gordon_pingzi01_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_pve_gordon_pingzi01_jxm-f81fa1dc72818965.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "f81fa1dc72818965356f780a96d37eac1e15edc08b7458caac3de5368ff21429"
+  },
+  {
+    "name": "fx_tex_pve_gx_tong01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_pve_gx_tong01-1485631f1f2dfc46.png",
+    "size": [
+      32,
+      32
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "1485631f1f2dfc460400a94fcc3813ff477890419cf019266af84ba927632421"
+  },
+  {
+    "name": "fx_tex_pve_jiang_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_pve_jiang_wwj-effdc54e4f34a141.png",
+    "size": [
+      85,
+      85
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "effdc54e4f34a1416e6af006a33de400363816f2ca80e009e98178b9dce91bd9"
+  },
+  {
+    "name": "fx_tex_pve_rene_zhen01_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_pve_rene_zhen01_wwj-0a135ca861e9f391.png",
+    "size": [
+      256,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "0a135ca861e9f3919b96cd4a5aa070f354e5d79547149f60781708299f7f0adf"
+  },
+  {
+    "name": "fx_tex_ring_xqc_08",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_ring_xqc_08-54a1bebbfdca6c4b.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "54a1bebbfdca6c4b7853dc56ae1faad23a6776ce12c716b758bde35c8aea1895"
+  },
+  {
+    "name": "fx_tex_supremacy_feast_mask04_lsg",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacy_feast_mask04_lsg-afb60c05245981b1.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "afb60c05245981b127eba96100051bd7ebce5042f90bb15938b4431a795a2321"
+  },
+  {
+    "name": "fx_tex_supremacy_feast_mask05_lsg",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacy_feast_mask05_lsg-46facd7daa0e0e38.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "46facd7daa0e0e3897915725ac1cd4e90d44993aa941b10d5719056afd9b6cd1"
+  },
+  {
+    "name": "fx_tex_supremacy_feast_trail02_lsg",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacy_feast_trail02_lsg-aa94c84226105968.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "aa94c8422610596878be1033f2cee844c33905d0e0869541e5224fab2cb6ac9e"
+  },
+  {
+    "name": "fx_tex_supremacy_feast_yanhua01_lsg_big",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacy_feast_yanhua01_lsg_big-15e78de79d4fe582.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "15e78de79d4fe5826e41e6ccea98ea1f516784f25520eb14ead9304904f5d072"
+  },
+  {
+    "name": "fx_tex_supremacywar_bazhuzhan_yh_bjx001",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_bazhuzhan_yh_bjx001-b48194dfc3c84c6d.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "b48194dfc3c84c6d9903bf4242003ce8313489988e1e702e413c3a56a20b12ac"
+  },
+  {
+    "name": "fx_tex_supremacywar_bazhuzhan_yh_bjx002",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_bazhuzhan_yh_bjx002-007df37b8db8f166.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "007df37b8db8f166673ddcd0d94d41406a471d90be0e43a3c930bcc9eff6ad36"
+  },
+  {
+    "name": "fx_tex_supremacywar_bazhuzhan_yh_bjx004",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_bazhuzhan_yh_bjx004-0c177146c65a6429.png",
+    "size": [
+      512,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "0c177146c65a64298916cd389c7c99f168aac20dd5d67c2943bc3340d6e37038"
+  },
+  {
+    "name": "fx_tex_supremacywar_bazhuzhan_yh_bjx007",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_bazhuzhan_yh_bjx007-ed89a0d0e8cfe941.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ed89a0d0e8cfe94195d19c08a03e64761a2fb640dbbc1a57da51ddd0801579cc"
+  },
+  {
+    "name": "fx_tex_supremacywar_bazhuzhan_yh_bjx008",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_bazhuzhan_yh_bjx008-7f6e27edd4a4a3ae.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7f6e27edd4a4a3aefb29b0ea8adda86c9fe08ca85f96492256e8ea6898dfa3f3"
+  },
+  {
+    "name": "fx_tex_supremacywar_zc01_yt_07lp",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_zc01_yt_07lp-9b33d59920670f84.png",
+    "size": [
+      512,
+      2048
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9b33d59920670f8417fd31b398dc2da599597375ad13088c1244710f153b64f8"
+  },
+  {
+    "name": "fx_tex_supremacywar_zc03_yt_fb_03",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_zc03_yt_fb_03-de1bb575ca01633c.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "de1bb575ca01633c4dee81f9a686e92fd7be789eb8304419eafbc77a6da204f8"
+  },
+  {
+    "name": "fx_tex_supremacywar_zc03_yt_fb_04",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_supremacywar_zc03_yt_fb_04-f31eaefa29abc0ee.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "f31eaefa29abc0ee469e7924d1c3db94cd8e6952507f7adb49c2cae3b350ab7c"
+  },
+  {
+    "name": "fx_tex_wanshengjie_change_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_wanshengjie_change_01-60a09772f858c4f3.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "60a09772f858c4f38bef38bd18fa23d032994acb27b743b89bc795778cb0af6a"
+  },
+  {
+    "name": "fx_tex_wanshengjie_change_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_wanshengjie_change_02-8933964974d9993f.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "8933964974d9993f7070c0ac994afb1f56687b1ac53a4487f3a5d66a5730311a"
+  },
+  {
+    "name": "fx_tex_wanshengjie_change_03",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_wanshengjie_change_03-2f6fdaefba4b254a.png",
+    "size": [
+      256,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "2f6fdaefba4b254a3f94331e3d915064ec08fc773ce165545bb0ee5977f79439"
+  },
+  {
+    "name": "fx_tex_world_monster003_angry_wwj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_monster003_angry_wwj-32e33fd4d187aba6.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "32e33fd4d187aba609ddb1409a282599971b26f766b4aaaa53c94e87e680dbeb"
+  },
+  {
+    "name": "fx_tex_world_monster_035_mask01_ysy",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_monster_035_mask01_ysy-7af942b7906ffb74.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7af942b7906ffb749defa59debdfb1bf566f2bd0fe6fb542dd3a2a3d039cec94"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_01-ad5798f610eef9d5.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ad5798f610eef9d535b91e54746f304f01e07466a67e669a8e0d3ae56a2fdd81"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_02-8fb9ca9ef73d6e34.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "8fb9ca9ef73d6e34d82122987fd24a99cb68ea1ef15453c0a168d83834f91d54"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_03",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_03-d1958a86feb9dfaf.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "d1958a86feb9dfaf4cfe8b1289def4bfab1509e3ccad35077af933ee35cfffa0"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_05",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_05-059ddac9c4f9099f.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "059ddac9c4f9099f136255194ddb7a555fa9cb53a6a3d10d1829ba64760ac101"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_06",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_06-56581e6847ca55ec.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "56581e6847ca55ec2121077e773e251d18855367fef48e846b6aabb4dfd96ac6"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_07",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_07-0380e738109a893d.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "0380e738109a893dbe2eb54a63ff1ebd2a17ab4d0c5e80f4df3a283410fcccb1"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_08",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_08-7c768dc03385cfca.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7c768dc03385cfca7f4fdab38b79b7fd6ada64686d25f17f0ff0c4a7455aee66"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_09",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_09-8aa33094af595fe2.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "8aa33094af595fe2e586b39519fde967bfed1de6f20ae71b18eabfb211bacbb3"
+  },
+  {
+    "name": "fx_tex_world_wenhao_lw_11",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wenhao_lw_11-c489f99eea26d82f.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c489f99eea26d82f5b5ec9c0269b34b3adf4b33f1739a35dd7ef384646caab1b"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_12_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_12_zhj-9714687544b27f91.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9714687544b27f9133e393bf53cd8af0627403bca5ed3356145e036f848e9550"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_13_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_13_zhj-b848d7536b8e5d52.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "b848d7536b8e5d52a2e85e14c714acd947b53e4e0ed614ed8ad9422db3d36502"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_15_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_15_zhj-4b8f8e52f686b46b.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "4b8f8e52f686b46bf881a97b14ea106f1f521598cc9f90e12facff9564574d6e"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_1_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_1_zhj-25ad57262107524f.png",
+    "size": [
+      128,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "25ad57262107524f3823b0e13727605f1ebca89f63440fcde577eb1678fa8a80"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_2_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_2_zhj-8583327d7f4534d5.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "8583327d7f4534d5d12beef6f466cbe44b40ee57560804ffcb221dc011809fda"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_3_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_3_zhj-9083c5d21dc1a2e0.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9083c5d21dc1a2e0a8d5a6173650b5873b34877bb0b20b0de7d003e9d58f456c"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_4_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_4_zhj-40805ed8b1dadba9.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "40805ed8b1dadba98b8a07432afc5eb9e540622e57ef30969d35c5e76fe63ede"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_9_zhj",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_9_zhj-4fae5bc481fa304d.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "4fae5bc481fa304d4817756b3fa62df6455f98b33849f2d0e1441cba0bf19f80"
+  },
+  {
+    "name": "fx_tex_world_wsj_nenglianzhao_dici_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fx_tex_world_wsj_nenglianzhao_dici_02-bc8fe9fb7902b8d2.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "bc8fe9fb7902b8d2fbc02e4df66b44d668f1e5515f8c19887fff6a4f03494304"
+  },
+  {
+    "name": "fxui_m_tex_pve_shoushudao_lxy",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_m_tex_pve_shoushudao_lxy-dffa4bbf5756dc5e.png",
+    "size": [
+      32,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "dffa4bbf5756dc5e1f12bfe917b89a57aab51c071892ca895a3417c83bb926db"
+  },
+  {
+    "name": "fxui_tex_alliance_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_01-9ade254e61e7f61f.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9ade254e61e7f61ff61e0ef0f66ab6d056b941a3faafd0c034bb5c35aed0d5e8"
+  },
+  {
+    "name": "fxui_tex_alliance_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_02-60ce4c814faa5f33.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "60ce4c814faa5f330637c01918baacf67cb52fc3097ea48e09a2149d5a08b466"
+  },
+  {
+    "name": "fxui_tex_alliance_03",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_03-28d7ab9eea8f0c6c.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "28d7ab9eea8f0c6ca95b4887e22b5354a8c693cefae6c7b41582e892ae33ff17"
+  },
+  {
+    "name": "fxui_tex_alliance_06",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_06-329d080c2ab92a93.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "329d080c2ab92a93e1b6708d265fa0068fdf45ff8a74eba5d2ffc68b75f1d26d"
+  },
+  {
+    "name": "fxui_tex_alliance_08",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_08-b6ac759b1e42af5d.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "b6ac759b1e42af5d1fd73bb26e2a9a20f882dd9b7460042eb5f40ab016335641"
+  },
+  {
+    "name": "fxui_tex_alliance_15",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_15-016b6d9133b713c4.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "016b6d9133b713c450aec978f4d5768593c9934858dd495c0e8a0cea82df3aa0"
+  },
+  {
+    "name": "fxui_tex_alliance_20",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_20-ff5592cfb1b0b76a.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "ff5592cfb1b0b76ab67e252a50e341babf54314173f6123bf3a9e6dd3bf07218"
+  },
+  {
+    "name": "fxui_tex_alliance_21",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_21-38b6674bf1ae4c83.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "38b6674bf1ae4c83707d48beeab8f7be0f91d4fd9944567fd3874525e63f1916"
+  },
+  {
+    "name": "fxui_tex_alliance_22",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_22-99881fa30811b278.png",
+    "size": [
+      128,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "99881fa30811b278ec2d1ec1f99dabcc7d49a00f840da42d9f034ad63f444386"
+  },
+  {
+    "name": "fxui_tex_alliance_23",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_23-8b724f57392a1cc0.png",
+    "size": [
+      256,
+      64
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "8b724f57392a1cc0625af804fee49e5cad0d9187b5fd345cf543be6c5d7e2d05"
+  },
+  {
+    "name": "fxui_tex_alliance_24",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_24-f7fb87a5f16b69f8.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "f7fb87a5f16b69f8c9866eee155859cec013e5a0d222c3b49c86781b99ecca3c"
+  },
+  {
+    "name": "fxui_tex_alliance_27",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_27-c67563d4106e5fb2.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c67563d4106e5fb26832662dcd026d3d59ea8e5a98ec587eef9bb050314fa3ac"
+  },
+  {
+    "name": "fxui_tex_alliance_xulie_yshy_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_alliance_xulie_yshy_01-079c46fb89501359.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "079c46fb89501359265f16ecc5f126ac8ef038cd27223d962bde754e1fee8f9d"
+  },
+  {
+    "name": "fxui_tex_anniversary2025_jiacan_glow03_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_anniversary2025_jiacan_glow03_jxm-c027d1aca5181de5.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c027d1aca5181de5e88e83b3d1e0263eefb7d0c902ecbeae92c059b92bc1f30d"
+  },
+  {
+    "name": "fxui_tex_blackknight_chengbaoglow_lxy",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_blackknight_chengbaoglow_lxy-15143a1d72c494e9.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "15143a1d72c494e95a37a0d24cd38272f5b1f6dfad05928057528fd67106327b"
+  },
+  {
+    "name": "fxui_tex_brawlwar_transporterfx_lw_02",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_brawlwar_transporterfx_lw_02-d0bd90745c8f1448.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "d0bd90745c8f1448e3906576cd8df371e4b523f29b8a6e7986fb4b9ad07619d2"
+  },
+  {
+    "name": "fxui_tex_brawlwar_wuzi_09_jxm_01",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_brawlwar_wuzi_09_jxm_01-211295f43cbbdb7b.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "211295f43cbbdb7ba5b0808744c18b586d5b9b0d8a8273d8c0a67896387d6b99"
+  },
+  {
+    "name": "fxui_tex_common_mask08_jxm 1",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_common_mask08_jxm_1-9838e56d34d468ef.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "9838e56d34d468ef4377c2e116d1061c55d48565d706df33a6e8a29170554e77"
+  },
+  {
+    "name": "fxui_tex_dress_mask",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_dress_mask-c81b57ea04b495f4.png",
+    "size": [
+      128,
+      128
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "c81b57ea04b495f4c7ad5f28a25ca675d15a9a332272ebaa8b1b082543b07ce7"
+  },
+  {
+    "name": "fxui_tex_dress_tx_chelun03_jxm",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/fxui_tex_dress_tx_chelun03_jxm-21dfb6fdcc05f373.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_6x6",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "21dfb6fdcc05f37367833fc84c595af57b2c8796b06e3ee4a86751fc9fb10b44"
+  },
+  {
+    "name": "t_world_building_bouncingpumpkin_shadow",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/t_world_building_bouncingpumpkin_shadow-94188bc26a6c2445.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_4x4",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "94188bc26a6c24455f58080754997d9eb216b80e69c9527db48a342e7f2f94c6"
+  },
+  {
+    "name": "t_world_building_clownbox_shadow",
+    "category": "Effets et éclairage",
+    "file": "./assets/recovered/t_world_building_clownbox_shadow-7b381028fe92f4b6.png",
+    "size": [
+      256,
+      256
+    ],
+    "format": "ASTC_RGB_4x4",
+    "kind": "Texture brute",
+    "note": "Métadonnées et pixels dans des blocs indépendants. Pas une scène assemblée : découpage, matériaux et placement restent séparés.",
+    "png_sha256": "7b381028fe92f4b608e5c8969631dbcf5a3516ad72243671b85d0276577a67a3"
+  }
+]

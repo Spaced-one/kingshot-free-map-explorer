@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Simulation d’alignement des châteaux</title>
+  <link rel="stylesheet" href="/alignment.css"><script type="module" src="./alignment.js"></script>
+</head>
+<body>
+  <main>
+    <header><a href="./">← Revenir à l’atlas</a><h1>Test d’alignement des châteaux</h1><p>Exemples fictifs uniquement · mêmes images et même moteur de dessin que l’atlas. Aucune collecte, aucun compte, aucun émulateur.</p></header>
+    <section class="controls" aria-label="Réglages de la simulation">
+      <label>Vue<select id="projection"><option value="flat">2D</option><option value="iso">2.5D</option></select></label>
+      <label>Disposition<select id="orientation"><option value="screen" data-i18n="alignment.screen_line">Ligne horizontale à l’écran</option><option value="world" selected data-i18n="alignment.same_y">Même Y dans la grille</option></select></label>
+      <label>Zoom<select id="zoom"><option value="16">16</option><option value="24">24</option><option value="32">32</option><option value="40" selected>40</option></select></label>
+      <label>Écart en cases<select id="spacing"><option value="2" selected data-i18n="alignment.spacing_two">2 · voisins sans case vide</option><option value="4">4</option><option value="6">6</option></select></label>
+      <label>Survol simulé<select id="hover"><option value="none" data-i18n="alignment.hover_none">Aucun · au repos</option><option value="0" data-i18n="alignment.example_a">Exemple A</option><option value="1" data-i18n="alignment.example_b">Exemple B</option><option value="2" data-i18n="alignment.example_c">Exemple C</option></select></label>
+      <label class="check"><input id="guides" type="checkbox" checked>Repères de diagnostic</label>
+      <label class="check"><input id="candidate" type="checkbox">Essai local : modèle gris légèrement à droite et plus bas</label>
+      <button id="reset">Réinitialiser le test</button>
+    </section>
+    <p class="legend">Blanc : coordonnées et ligne au sol · Vert : ancrage configuré de l’image · Orange : milieu horizontal du rectangle visible (ombre comprise, pas un pivot natif).</p>
+    <p class="notice">Par défaut : un gris entre deux bleus, Y=600 pour les trois et X=598, 600, 602. Leurs empreintes2×2 se touchent sans case vide ; les images peuvent se chevaucher. La ligne de même Y apparaît oblique dans la vue illustrée. L’essai du gris (+12px source à droite, +16px vers le bas) ne modifie que cette simulation, jamais l’atlas.</p>
+    <div id="scenes"></div><p id="summary" role="status"></p><span id="scale" hidden></span>
+    <footer>Survol piloté par le réglage ci-dessus, pas par la souris. Déplacement et zoom tactile disponibles ; « Réinitialiser » recadre les scènes. Sur téléphone, faites défiler horizontalement une scène pour conserver les trois bâtiments à leur taille de test.</footer>
+  </main>
+</body>
+</html>

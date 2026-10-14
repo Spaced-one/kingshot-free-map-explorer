@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Textures récupérées · Kingdom Atlas</title>
+  <meta name="description" content="Collection locale des images originales récupérées des fichiers Kingshot.">
+  <link rel="stylesheet" href="/recovered_art.css">
+  <script type="module" src="./recovered_art.js"></script>
+</head>
+<body>
+  <header><a href="./">← Retour à la carte</a><span>ARCHIVES LOCALES · REA</span></header>
+  <main>
+    <h1>Images originales récupérées</h1>
+    <p class="intro">Le Château Royal détaillé et les textures extraites des fichiers du jeu, sans bouclier ajouté ni pixels inventés. Une texture brute n’est pas forcément une image de bâtiment prête à placer.</p>
+    <div class="controls">
+      <label>Rechercher une texture<input id="art-search" type="search" placeholder="Château, building, terrain…" autocomplete="off"></label>
+      <label>Catégorie<select id="art-category"><option value="" data-i18n="library.all_categories">Toutes les catégories</option></select></label>
+    </div>
+    <p id="art-status" role="status">Chargement de l’inventaire…</p>
+    <section id="art-grid" class="grid" aria-label="Images récupérées"></section>
+    <button id="art-more" type="button" hidden>Afficher les images suivantes</button>
+    <details><summary>Provenance et limites</summary><p>Les fichiers sont conservés localement. Les exports de la collection n’utilisent que des pixels issus de blocs UnityFS décodés indépendamment. Pour le Château Royal, l’encodage est corroboré par la taille du flux, la silhouette et une seconde version ASTC du jeu ; le champ de format natif reste endommagé. Les 26 lignes exclues sont de la marge transparente dans cette seconde version. Les pivots, matériaux, animations et assemblages 3D ne sont pas tous établis. Les rapports techniques et les fichiers Unity originaux restent dans le dossier analysis du projet, hors du site.</p></details>
+  </main>
+</body>
+</html>

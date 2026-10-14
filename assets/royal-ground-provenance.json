@@ -1,0 +1,195 @@
+{
+  "id": "royal-ground",
+  "file": "royal-ground-source-known.png",
+  "texture_size": [
+    1024,
+    1024
+  ],
+  "texture_name_candidate": "surface2001",
+  "texture_format": "ASTC6x6 inferred/corroborated",
+  "mip_sizes": [
+    467856,
+    118336,
+    29584,
+    7744,
+    1936,
+    576,
+    144,
+    64,
+    16,
+    16,
+    16
+  ],
+  "source_stream_offset": 118336,
+  "source_stream_size": 626288,
+  "source_base_size": 467856,
+  "source_decoded_offset": 152620,
+  "source_pixel_unknown_bytes": 0,
+  "source_byte_origin": "Original independently standard-LZ4 decoded blocks only, no suffix reconstruction",
+  "source_base_sha256": "86f0997f275fd19d4aea9b7bc552527559b91911e3e86f726df7cb3306728a2b",
+  "source_stream_sha256": "c69030ab46b5e7550f929cc83d90d483457180d64510c9950cd84e56a98ff16a",
+  "png_sha256": "4324f7931a7adf3b4a7701d72143a70328fabaa2460da9be7982e9ff52b524d7",
+  "bundle_member": "scene_world_scenery_surface_cb606cebc79ab3e02159897954aab769.unity3d",
+  "bundle_sha256": "47924466bfbbd5b45a55dfe56627982eecb4d236a73a86a93fb3876b1da3d5aa",
+  "rea_pull_evidence_id": "ev_168f5fa7b5121c3e3589eb728fb58d8b5cd80064baee9db02d936a6155fdd9c1",
+  "source_resource": {
+    "offset": 34284,
+    "size": 1212480,
+    "flags": 0,
+    "name": "CAB-7528f6c2d0cda349fd121cc4424a6ace.resS"
+  },
+  "blocks": [
+    {
+      "index": 1,
+      "decoded_start": 152620,
+      "decoded_end": 262144,
+      "original_compressed_sha256": "0216ef01953914aac0a96178ceb97e97a5f39e5a51c3b5c9cc2c13b3861d70f8",
+      "block_decoded_sha256": "972ea39c918b9b73b5b0dcc1bd2893627b772978ab82c85f29c461fcee4a9c5e"
+    },
+    {
+      "index": 2,
+      "decoded_start": 262144,
+      "decoded_end": 393216,
+      "original_compressed_sha256": "1a94dfb2601f45c820a8317570cb3d68444d876610981c8cc01171393a49a829",
+      "block_decoded_sha256": "61b1e45ee27278e0092cb504175afa70f035e33976dbfe7d2caa437f5a486390"
+    },
+    {
+      "index": 3,
+      "decoded_start": 393216,
+      "decoded_end": 524288,
+      "original_compressed_sha256": "0a3f2d7ddbc1950633e04978291e71e68d6df2e13b929403eaa6f00c1f6b129e",
+      "block_decoded_sha256": "6a54242f946314241ef875478bb41892bb9ace5c1fca293e900eb4e06f4d961f"
+    },
+    {
+      "index": 4,
+      "decoded_start": 524288,
+      "decoded_end": 655360,
+      "original_compressed_sha256": "fce84689aae97663e48bc0c89140d52365cbd9c022a705d2223a18d17747fca0",
+      "block_decoded_sha256": "7342665e7856dc9d78ed5b3ac05561929c3f8e8e518e26c769254b5991484cdd"
+    },
+    {
+      "index": 5,
+      "decoded_start": 655360,
+      "decoded_end": 778908,
+      "original_compressed_sha256": "363ac458f4586e4f01525cff8c604c680d1e3e73a3d50f37ec58cdda2ddf8d11",
+      "block_decoded_sha256": "e1dc9506c2d5624c10ba22a4db18f8d3aec623cf2f74d27f1cc66a3a66e4b89e"
+    }
+  ],
+  "observed_art": "paving, four tower foundations, connecting perimeter walls, bridges and rock/moat ground",
+  "encoding_evidence": "Exact base/mip sizes, declared resS partition, surviving candidate stream offsets, coherent pixel decode and independent screenshot detail comparison.",
+  "metadata_native_validated": false,
+  "scene_reconstructed": false,
+  "placement": {
+    "source": "cache-surface2001-1024x1024.png",
+    "source_sha256": "4324f7931a7adf3b4a7701d72143a70328fabaa2460da9be7982e9ff52b524d7",
+    "screenshot": "screens/IMG_2522.PNG",
+    "screenshot_sha256": "05850c439fbbd2b52aa420e9a463337a4883b5d90e677c8c305467968de4a28a",
+    "texture_tower_slab_centres": [
+      {
+        "pixel": [
+          210,
+          205
+        ],
+        "world": [
+          595,
+          605
+        ]
+      },
+      {
+        "pixel": [
+          822,
+          205
+        ],
+        "world": [
+          605,
+          605
+        ]
+      },
+      {
+        "pixel": [
+          210,
+          817
+        ],
+        "world": [
+          595,
+          595
+        ]
+      },
+      {
+        "pixel": [
+          822,
+          817
+        ],
+        "world": [
+          605,
+          595
+        ]
+      }
+    ],
+    "pixels_per_cell": 61.2,
+    "texture_to_world": {
+      "a": 0.016339869281045753,
+      "b": 0,
+      "c": 0,
+      "d": -0.016339869281045753,
+      "e": 591.5686274509804,
+      "f": 608.3496732026143
+    },
+    "matches": [
+      {
+        "source_rect": [
+          805,
+          295,
+          875,
+          475
+        ],
+        "zoom": 112.0,
+        "score": 0.7783740598302094,
+        "screen_top_left": [
+          396,
+          718
+        ]
+      },
+      {
+        "source_rect": [
+          800,
+          400,
+          875,
+          570
+        ],
+        "zoom": 112.0,
+        "score": 0.8676893706753556,
+        "screen_top_left": [
+          524,
+          814
+        ]
+      },
+      {
+        "source_rect": [
+          300,
+          115,
+          530,
+          205
+        ],
+        "zoom": 90.0,
+        "score": 0.3514236444191832,
+        "screen_top_left": [
+          576,
+          1862
+        ]
+      }
+    ],
+    "limitations": [
+      "Texture slab centres selected visually; positions and scales are display calibration, not recovered native meshes.",
+      "NCC patches may be occluded by the castle or screenshot UI; scores are retained, not a claim of exact whole-scene matching.",
+      "All rendering occurs offline on saved files; no game, emulator or image modification."
+    ]
+  },
+  "protection_effects": false,
+  "limitations": [
+    "Native Texture2D dimensions/format/stream fields remain partly protected; encoding and stream partition are inferred and corroborated, not read from a fully intact object.",
+    "Nearest surviving name suggests surface2001; exact Sprite/Mesh/Material PPtr remains separate.",
+    "Tower slab centres and projection on the website are display calibration, not a recovered native mesh transform.",
+    "Animated shader effects, base tower ballistas and complete terrain scene are not recreated."
+  ]
+}

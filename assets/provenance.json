@@ -1,0 +1,2169 @@
+{
+  "terrain": "Screenshot-referenced reconstruction plus optional logical-mask view; neither is a recovered native texture.",
+  "terrain_style": {
+    "mode": "reference-styled-reconstruction",
+    "native_texture": false,
+    "source_geography": "recovered low-nibble-first 1200² logical map mask",
+    "mask_sha256": "5548360f7fa681a11ca428414106d340e73e294c6a445285b179f6ad24f3787d",
+    "output": "terrain-game-style.jpg",
+    "output_sha256": "960010fd45073966dc3764bb949f9721fef17d16c7117845cd7a4aa21b2187a0",
+    "dimensions": [
+      4800,
+      4800
+    ],
+    "grass_rgb": [
+      127.0,
+      156.0,
+      83.0
+    ],
+    "water_rgb": [
+      42.0,
+      93.0,
+      127.0
+    ],
+    "references": [
+      {
+        "file": "Capture d’écran 2026-10-13 à 12.13.44.png",
+        "sha256": "cd4cf9b6534995034aaa5d3223c14ad271e9da2a5658a9fb96888f053e0fb931",
+        "grass_sample_rect": [
+          100,
+          490,
+          180,
+          590
+        ],
+        "grass_median_rgb": [
+          127.0,
+          156.0,
+          83.0
+        ],
+        "water_sample_rect": [
+          260,
+          760,
+          350,
+          850
+        ],
+        "water_median_rgb": [
+          42.0,
+          93.0,
+          127.0
+        ]
+      },
+      {
+        "file": "Capture d’écran 2026-10-13 à 12.14.01.png",
+        "sha256": "e80343833e6770f2ee7ace08fbf14488c7d8fe76247d307e737cb3b222219642",
+        "grass_sample_rect": [
+          120,
+          120,
+          220,
+          180
+        ],
+        "grass_median_rgb": [
+          126.0,
+          159.0,
+          85.0
+        ]
+      },
+      {
+        "file": "Capture d’écran 2026-10-13 à 12.14.57.png",
+        "sha256": "ae4a85dc1d46ad38ce106f025e2a5412d9fec75785bcf49eda5ccad990af9550",
+        "grass_sample_rect": [
+          190,
+          520,
+          280,
+          620
+        ],
+        "grass_median_rgb": [
+          136.0,
+          152.0,
+          83.0
+        ]
+      }
+    ],
+    "limitations": [
+      "Procedural grass and coast shading, not recovered native shaders/textures.",
+      "Relief is illustrative; original height/terrain-material mapping unestablished.",
+      "No guessed trees/rocks placed; decoration placement schema remains unavailable.",
+      "World geography retained; no UI or screenshot patch pasted on the map."
+    ]
+  },
+  "castle_sprites": [
+    {
+      "name": "castle1",
+      "observed_name_bytes": "006173746c6531",
+      "repaired_name_prefix": "c inferred from filename and Lua path",
+      "sprite_object_decoded_offset": 32616,
+      "render_data_key_offset": 32688,
+      "render_data_key": "8fa6a2cf935ae542a20919d470263d322003450100000000",
+      "atlas_map_entry_decoded_offset": 18168,
+      "texture_rect_unity_bottom_left": [
+        0,
+        539,
+        339,
+        273
+      ],
+      "output": "/Users/baptm/Desktop/projets/REA_first_try/analysis/assets/castle1-atlas.png",
+      "png_sha256": "72b1b36203442f9d0cc6616a7e1c02291ba46c539581113a4f4f20e8d620a3b4",
+      "resource_source_coverage": "all compressed bytes were independently standard-LZ4-decoded from blocks 3 onward; no artificial dictionary reaches resource stream 370192..2241616",
+      "metadata_coverage": "render key and rectangle recovered by suffix-resync; first name character unestablished, prefix repaired from matching Lua/prefab identity",
+      "key_and_rect_consensus_variant_count": 20,
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_resource_offset": 370192,
+      "texture_resource_size": 1871424,
+      "texture_astc_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "name": "castle3",
+      "observed_name_bytes": "006173746c6533",
+      "repaired_name_prefix": "c inferred from filename and Lua path",
+      "sprite_object_decoded_offset": 33600,
+      "render_data_key_offset": 33672,
+      "render_data_key": "68575e352db8ed469c75d901927f09932003450100000000",
+      "atlas_map_entry_decoded_offset": 16944,
+      "texture_rect_unity_bottom_left": [
+        1272,
+        0,
+        384,
+        317
+      ],
+      "output": "/Users/baptm/Desktop/projets/REA_first_try/analysis/assets/castle3-atlas.png",
+      "png_sha256": "73c40d18b78a3dbd8b32cb4bb6e11e074a6e825f3da02774d5f80d6eab00483a",
+      "resource_source_coverage": "all compressed bytes were independently standard-LZ4-decoded from blocks 3 onward; no artificial dictionary reaches resource stream 370192..2241616",
+      "metadata_coverage": "render key and rectangle recovered by suffix-resync; first name character unestablished, prefix repaired from matching Lua/prefab identity",
+      "key_and_rect_consensus_variant_count": 20,
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_resource_offset": 370192,
+      "texture_resource_size": 1871424,
+      "texture_astc_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "name": "castle5",
+      "observed_name_bytes": "006173746c6535",
+      "repaired_name_prefix": "c inferred from filename and Lua path",
+      "sprite_object_decoded_offset": 27816,
+      "render_data_key_offset": 27888,
+      "render_data_key": "d0718ed4b749f64fbe38faf6113232de2003450100000000",
+      "atlas_map_entry_decoded_offset": 18440,
+      "texture_rect_unity_bottom_left": [
+        424,
+        0,
+        410,
+        410
+      ],
+      "output": "/Users/baptm/Desktop/projets/REA_first_try/analysis/assets/castle5-atlas.png",
+      "png_sha256": "5bcc28425f30542f863dc524ef40fe7161dc351c7cf7b7e83b977193064ea123",
+      "resource_source_coverage": "all compressed bytes were independently standard-LZ4-decoded from blocks 3 onward; no artificial dictionary reaches resource stream 370192..2241616",
+      "metadata_coverage": "render key and rectangle recovered by suffix-resync; first name character unestablished, prefix repaired from matching Lua/prefab identity",
+      "key_and_rect_consensus_variant_count": 20,
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_resource_offset": 370192,
+      "texture_resource_size": 1871424,
+      "texture_astc_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "name": "castle6",
+      "observed_name_bytes": "006173746c6536",
+      "repaired_name_prefix": "c inferred from filename and Lua path",
+      "sprite_object_decoded_offset": 21792,
+      "render_data_key_offset": 21864,
+      "render_data_key": "b2b2e678d089114b8006ec2ea69f9aa02003450100000000",
+      "atlas_map_entry_decoded_offset": 17760,
+      "texture_rect_unity_bottom_left": [
+        833,
+        1244,
+        410,
+        382
+      ],
+      "output": "/Users/baptm/Desktop/projets/REA_first_try/analysis/assets/castle6-atlas.png",
+      "png_sha256": "dc3c54b98c0a07a50c09597f2b796492f885c667b3b8ca4a78a238c2c586175e",
+      "resource_source_coverage": "all compressed bytes were independently standard-LZ4-decoded from blocks 3 onward; no artificial dictionary reaches resource stream 370192..2241616",
+      "metadata_coverage": "render key and rectangle recovered by suffix-resync; first name character unestablished, prefix repaired from matching Lua/prefab identity",
+      "key_and_rect_consensus_variant_count": 20,
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_resource_offset": 370192,
+      "texture_resource_size": 1871424,
+      "texture_astc_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "name": "castle7",
+      "observed_name_bytes": "006173746c6537",
+      "repaired_name_prefix": "c inferred from filename and Lua path",
+      "sprite_object_decoded_offset": 20472,
+      "render_data_key_offset": 20544,
+      "render_data_key": "182cf8ace66cb24e94fea47f4a00c2752003450100000000",
+      "atlas_map_entry_decoded_offset": 18032,
+      "texture_rect_unity_bottom_left": [
+        373,
+        897,
+        430,
+        386
+      ],
+      "output": "/Users/baptm/Desktop/projets/REA_first_try/analysis/assets/castle7-atlas.png",
+      "png_sha256": "639885f3d987c5e640b5cfcc0ac146da447900544e2b7a35065480558dfed872",
+      "resource_source_coverage": "all compressed bytes were independently standard-LZ4-decoded from blocks 3 onward; no artificial dictionary reaches resource stream 370192..2241616",
+      "metadata_coverage": "render key and rectangle recovered by suffix-resync; first name character unestablished, prefix repaired from matching Lua/prefab identity",
+      "key_and_rect_consensus_variant_count": 20,
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_resource_offset": 370192,
+      "texture_resource_size": 1871424,
+      "texture_astc_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    }
+  ],
+  "alliance_sprites": [
+    {
+      "id": "alliance_flag_broken",
+      "sprite_record_offset": 13600,
+      "name_bytes": "616c6c69616e63655f666c61675f62726f6b656e",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 0,
+      "name_length_used_for_alignment": 20,
+      "sprite_guid": "9dc833019602534db7ca4b2cc304dc82",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "atlas_entry_offset": 24364,
+      "texture_rect_unity_bottom_left": [
+        0.0,
+        1832.0,
+        124.0,
+        169.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        0,
+        1832,
+        124,
+        169
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "alliance_flag_broken.png",
+      "png_sha256": "de2fbfa8e29b15a45fa2a728b200339aded21ecf2e76de6e6356a9665e30b62b"
+    },
+    {
+      "id": "sprite-14360",
+      "sprite_record_offset": 14360,
+      "name_bytes": "616c6c69616e63655f747261705f636c61e3ec",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "2536b2a400daf7429dcc031138dc2acc",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 25660,
+      "texture_rect_unity_bottom_left": [
+        1001.0,
+        0.0,
+        455.390625,
+        362.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1001,
+        0,
+        456,
+        362
+      ],
+      "unknown_astc_blocks": 347,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "not exported: source pixels unknown"
+    },
+    {
+      "id": "alliance_trap_door",
+      "sprite_record_offset": 16120,
+      "name_bytes": "616c6c69616e63655f747261705f646f6f72",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 0,
+      "name_length_used_for_alignment": 18,
+      "sprite_guid": "112c067840341949b56bc7815348f7f1",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "status": "not exported: 0 valid atlas entries"
+    },
+    {
+      "id": "sprite-16656",
+      "sprite_record_offset": 16656,
+      "name_bytes": "616c6c69616e63655f73686f77000000005f32",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "ce4c920f2d97dd409740f74a3decd874",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 24580,
+      "texture_rect_unity_bottom_left": [
+        1045.0,
+        366.0,
+        413.390625,
+        356.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1045,
+        366,
+        414,
+        356
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-16656.png",
+      "png_sha256": "86a3587d96b5ac67b8ddd2477986846f655b4cffbe6937781fbd487e3a4ab501"
+    },
+    {
+      "id": "sprite-17576",
+      "sprite_record_offset": 17576,
+      "name_bytes": "616c6c69616e63655f6d6f000000df7a00000000005f34",
+      "name_unknown_bytes": 8,
+      "observed_name_length": 23,
+      "name_length_used_for_alignment": 23,
+      "sprite_guid": "1e8bd762f4330a4c990136314d959259",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 25012,
+      "texture_rect_unity_bottom_left": [
+        501.0,
+        1420.0,
+        497.390625,
+        408.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        501,
+        1420,
+        498,
+        408
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-17576.png",
+      "png_sha256": "5d533dfb359c0ade608bed3745762fd2a32b8422b030bfa5e1620e68b6b3c232"
+    },
+    {
+      "id": "sprite-19176",
+      "sprite_record_offset": 19176,
+      "name_bytes": "616c6c69616e63655f73686f77000000005f33",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "101425b52e8fd34c97ff7cfd1b5ca529",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 25876,
+      "texture_rect_unity_bottom_left": [
+        1002.0,
+        1446.0,
+        413.390625,
+        356.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1002,
+        1446,
+        414,
+        356
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-19176.png",
+      "png_sha256": "497e310b1654747cab7d55f44c053f60c8ab9e054e0daf12f1be49c8532afb6f"
+    },
+    {
+      "id": "alliance_trap_open_door",
+      "sprite_record_offset": 20120,
+      "name_bytes": "616c6c69616e63655f747261705f6f70656e5f646f6f72",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 23,
+      "name_length_used_for_alignment": 23,
+      "sprite_guid": "4188ba8362d85e4d92ab805550850222",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "status": "not exported: 0 valid atlas entries"
+    },
+    {
+      "id": "alliance_duel",
+      "sprite_record_offset": 20656,
+      "name_bytes": "616c6c69616e63655f6475656c",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 13,
+      "name_length_used_for_alignment": 13,
+      "sprite_guid": "c2099b94c4491240b83e6e470bfc584d",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "atlas_entry_offset": 25552,
+      "texture_rect_unity_bottom_left": [
+        1420.0,
+        1086.0,
+        420.0,
+        328.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1420,
+        1086,
+        420,
+        328
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "alliance_duel.png",
+      "png_sha256": "77bd5e3ea2dfe34ce0149d9c1f0be3ac35ee348e9f41672871b5ae5b67925029"
+    },
+    {
+      "id": "sprite-21888",
+      "sprite_record_offset": 21888,
+      "name_bytes": "616c6c69616e63655f73686f77000000005f36",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "5701c4157690ac4aa05ccba56f3c846f",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 24688,
+      "texture_rect_unity_bottom_left": [
+        1045.0,
+        726.0,
+        413.390625,
+        356.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1045,
+        726,
+        414,
+        356
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-21888.png",
+      "png_sha256": "9a02b2feceddbd2319da94a41da28228c7caa668a604859ca7138a16403bc86c"
+    },
+    {
+      "id": "alliance_flag",
+      "sprite_record_offset": 22880,
+      "name_bytes": "616c6c69616e63655f666c6167",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 13,
+      "name_length_used_for_alignment": 13,
+      "sprite_guid": "62b18036f9c27d49a02515f5f0be11ef",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "atlas_entry_offset": 24796,
+      "texture_rect_unity_bottom_left": [
+        1420.0,
+        1418.0,
+        124.0,
+        169.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1420,
+        1418,
+        124,
+        169
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "alliance_flag.png",
+      "png_sha256": "d37896fd56a80f10ca14d5a1c6af329f59ed6adf86a5760a21ddf1ac7ffe5170"
+    },
+    {
+      "id": "sprite-26560",
+      "sprite_record_offset": 26560,
+      "name_bytes": "616c6c69616e63655f6d6f000000df7a00000000005f33",
+      "name_unknown_bytes": 8,
+      "observed_name_length": 23,
+      "name_length_used_for_alignment": 23,
+      "sprite_guid": "2aa0f60dba11b2429ebcfec5876755d8",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 24472,
+      "texture_rect_unity_bottom_left": [
+        0.0,
+        1420.0,
+        497.390625,
+        408.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        0,
+        1420,
+        498,
+        408
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-26560.png",
+      "png_sha256": "a2078f1a57637e9824e95c1bac2b844310dc9895c66c5b6deced6a30111ec6b0"
+    },
+    {
+      "id": "sprite-29960",
+      "sprite_record_offset": 29960,
+      "name_bytes": "616c6c69616e63655f000000005f62726f6b656e",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 0,
+      "name_length_used_for_alignment": 20,
+      "sprite_guid": "13c63af8053f8d4b9ca51f1eb63abc1a",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 26416,
+      "texture_rect_unity_bottom_left": [
+        0.0,
+        968.0,
+        540.0,
+        448.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        0,
+        968,
+        540,
+        448
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-29960.png",
+      "png_sha256": "3500d3f998dd8b77d74b9f13d816db71e947d69b54d651fc56f5b3cdb060b835"
+    },
+    {
+      "id": "sprite-32384",
+      "sprite_record_offset": 32384,
+      "name_bytes": "616c6c69616e63655f73686f77000000005f34",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "a46900aaf1ebc64894c387e7a1630d2c",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 25768,
+      "texture_rect_unity_bottom_left": [
+        1003.0,
+        1086.0,
+        413.390625,
+        356.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1003,
+        1086,
+        414,
+        356
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-32384.png",
+      "png_sha256": "524ca82799c175b39168a8f42750ec685195513f43fe6be00d8dfb1775d5e640"
+    },
+    {
+      "id": "sprite-33336",
+      "sprite_record_offset": 33336,
+      "name_bytes": "616c6c69616e63655f73686f77000000005f35",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "88e9b16639f86442a317b1d35409eb9d",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 25228,
+      "texture_rect_unity_bottom_left": [
+        1462.0,
+        360.0,
+        413.390625,
+        356.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1462,
+        360,
+        414,
+        356
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-33336.png",
+      "png_sha256": "fdca304a7a48a7feccb2ebe23eacb5275a0d71ada12e9b8fe0349d9d00de81e0"
+    },
+    {
+      "id": "sprite-34272",
+      "sprite_record_offset": 34272,
+      "name_bytes": "616c6c69616e63655f00000000",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 13,
+      "name_length_used_for_alignment": 13,
+      "sprite_guid": "f9c784beaa3d472fac2de8869dba0b10",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 26200,
+      "texture_rect_unity_bottom_left": [
+        0.0,
+        516.0,
+        540.0,
+        448.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        0,
+        516,
+        540,
+        448
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-34272.png",
+      "png_sha256": "2c3d720a1e41e037ff8bc6db7b71da403a45aa0bc3052781440a4dceb8db992d"
+    },
+    {
+      "id": "alliance_trap_open",
+      "sprite_record_offset": 36024,
+      "name_bytes": "616c6c69616e63655f747261705f6f70656e",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 18,
+      "name_length_used_for_alignment": 18,
+      "sprite_guid": "f07a99b5b1c97d4e9dedc23b97b40bb5",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "atlas_entry_offset": 25984,
+      "texture_rect_unity_bottom_left": [
+        544.0,
+        824.0,
+        455.390625,
+        362.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        544,
+        824,
+        456,
+        362
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "alliance_trap_open.png",
+      "png_sha256": "5e744299f80c557f84ff0db5a847eb2f25e36c5616c6e686ca9b9448b64cad9e"
+    },
+    {
+      "id": "alliance_arsenal",
+      "sprite_record_offset": 37816,
+      "name_bytes": "616c6c69616e63655f617273656e616c",
+      "name_unknown_bytes": 0,
+      "observed_name_length": 16,
+      "name_length_used_for_alignment": 16,
+      "sprite_guid": "e46f1c39ed060c4783e9ff7c881fe60b",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "original name",
+      "status": "not exported: 0 valid atlas entries"
+    },
+    {
+      "id": "sprite-39616",
+      "sprite_record_offset": 39616,
+      "name_bytes": "616c6c69616e63655f6d6f000000df7a00000000005f32",
+      "name_unknown_bytes": 8,
+      "observed_name_length": 23,
+      "name_length_used_for_alignment": 23,
+      "sprite_guid": "a61b4ae8522cd3459f75b72b32ec1b7f",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 26308,
+      "texture_rect_unity_bottom_left": [
+        544.0,
+        412.0,
+        497.390625,
+        408.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        544,
+        412,
+        498,
+        408
+      ],
+      "unknown_astc_blocks": 0,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "exported: all source ASTC blocks known",
+      "file": "sprite-39616.png",
+      "png_sha256": "c8519a549fc4e89d4068bf2bddba86fe51f701ff057322a62b2be4ab339cf022"
+    },
+    {
+      "id": "sprite-41256",
+      "sprite_record_offset": 41256,
+      "name_bytes": "616c6c69616e63655f6d6f000000df7a00000000005f31",
+      "name_unknown_bytes": 8,
+      "observed_name_length": 23,
+      "name_length_used_for_alignment": 23,
+      "sprite_guid": "feba7cbb11dd06488d94f8865daf55ed",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 26092,
+      "texture_rect_unity_bottom_left": [
+        500.0,
+        0.0,
+        497.390625,
+        408.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        500,
+        0,
+        498,
+        408
+      ],
+      "unknown_astc_blocks": 315,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "not exported: source pixels unknown"
+    },
+    {
+      "id": "sprite-42888",
+      "sprite_record_offset": 42888,
+      "name_bytes": "616c6c69616e63655f73686f77000000005f31",
+      "name_unknown_bytes": 4,
+      "observed_name_length": 19,
+      "name_length_used_for_alignment": 19,
+      "sprite_guid": "93f47864db0e334ab3ee399173b35ac7",
+      "sprite_guid_unknown_bytes": 0,
+      "identity": "anonymous; building meaning not established",
+      "atlas_entry_offset": 25120,
+      "texture_rect_unity_bottom_left": [
+        1460.0,
+        0.0,
+        413.390625,
+        356.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1460,
+        0,
+        414,
+        356
+      ],
+      "unknown_astc_blocks": 191,
+      "member": "assets/data/atlas_world_building_alliance_89f3e5604782dbc21e086157e6d71647.unity3d",
+      "bundle_sha256": "895aba12ef0926b2d2c149c112479f6c282ea2c82029b595988eb70268695253",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "status": "not exported: source pixels unknown"
+    }
+  ],
+  "deposit_sprites": [
+    {
+      "id": "mine_meat",
+      "map_object_type": 35,
+      "conf_id": 101,
+      "resource_type": 501,
+      "mapping_source": "parent investigation: AllianceMineRead/WorldResRead and native confIDs",
+      "sprite_record_offset": 39200,
+      "observed_name_bytes": "6d696e655f6d656174",
+      "name_unknown_bytes": 0,
+      "identity": "intact original sprite name",
+      "name_length_field": "unknown; 9-character alignment corroborated by name, known GUID and atlas map",
+      "sprite_guid": "fbe4d41e7096074e85a1e0ecebcd4bed",
+      "sprite_guid_unknown_bytes": 0,
+      "sprite_guid_offset": 39276,
+      "atlas_entry_offset": 16672,
+      "atlas_rect_original": [
+        0.0,
+        816.0,
+        369.0,
+        326.0
+      ],
+      "atlas_rect_unknown_byte_positions": [],
+      "width_reconstruction": null,
+      "texture_rect_unity_bottom_left": [
+        0.0,
+        816.0,
+        369.0,
+        326.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        0,
+        816,
+        369,
+        326
+      ],
+      "file": "mine_meat.png",
+      "png_sha256": "51e7a9620e5a96d0e8bc9177ec80efaad597f9a1963e482c78d9ba9ae8f9fec8",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_source_offset_decoded": 412032,
+      "texture_source_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "unknown_source_astc_blocks": 0,
+      "texture_coverage": "entire ASTC atlas independently standard-LZ4 decoded, no artificial-dictionary bytes",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "id": "mine_wood",
+      "map_object_type": 35,
+      "conf_id": 201,
+      "resource_type": 502,
+      "mapping_source": "parent investigation: AllianceMineRead/WorldResRead and native confIDs",
+      "sprite_record_offset": 34720,
+      "observed_name_bytes": "6d696e655f776f6f64",
+      "name_unknown_bytes": 0,
+      "identity": "intact original sprite name",
+      "name_length_field": "unknown; 9-character alignment corroborated by name, known GUID and atlas map",
+      "sprite_guid": "bc9736d01b0d08458787b979c7c362c3",
+      "sprite_guid_unknown_bytes": 0,
+      "sprite_guid_offset": 34796,
+      "atlas_entry_offset": 18304,
+      "atlas_rect_original": [
+        1164.0,
+        399.0,
+        442.0,
+        354.0
+      ],
+      "atlas_rect_unknown_byte_positions": [],
+      "width_reconstruction": null,
+      "texture_rect_unity_bottom_left": [
+        1164.0,
+        399.0,
+        442.0,
+        354.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        1164,
+        399,
+        442,
+        354
+      ],
+      "file": "mine_wood.png",
+      "png_sha256": "22a71136b49f786edc7ddd492e04727b0a536b3114acb416700c2c27521a3ac4",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_source_offset_decoded": 412032,
+      "texture_source_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "unknown_source_astc_blocks": 0,
+      "texture_coverage": "entire ASTC atlas independently standard-LZ4 decoded, no artificial-dictionary bytes",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "id": "mine_coal",
+      "map_object_type": 35,
+      "conf_id": 301,
+      "resource_type": 503,
+      "mapping_source": "parent investigation: AllianceMineRead/WorldResRead and native confIDs",
+      "sprite_record_offset": 19008,
+      "observed_name_bytes": "6d696e655f636f6100",
+      "name_unknown_bytes": 1,
+      "identity": "final l inferred from native config/prefab identity",
+      "name_length_field": "unknown; 9-character alignment corroborated by name, known GUID and atlas map",
+      "sprite_guid": "4db473fc29673248a68fb2439cb4cda1",
+      "sprite_guid_unknown_bytes": 0,
+      "sprite_guid_offset": 19084,
+      "atlas_entry_offset": 18712,
+      "atlas_rect_original": [
+        409.0,
+        1477.0,
+        420.0,
+        394.0
+      ],
+      "atlas_rect_unknown_byte_positions": [],
+      "width_reconstruction": null,
+      "texture_rect_unity_bottom_left": [
+        409.0,
+        1477.0,
+        420.0,
+        394.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        409,
+        1477,
+        420,
+        394
+      ],
+      "file": "mine_coal.png",
+      "png_sha256": "99e1bc2395afbed247dcb58f89c496970cf2316020b9e73e6d2394fe886cfb20",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_source_offset_decoded": 412032,
+      "texture_source_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "unknown_source_astc_blocks": 0,
+      "texture_coverage": "entire ASTC atlas independently standard-LZ4 decoded, no artificial-dictionary bytes",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    },
+    {
+      "id": "mine_iron",
+      "map_object_type": 35,
+      "conf_id": 401,
+      "resource_type": 504,
+      "mapping_source": "parent investigation: AllianceMineRead/WorldResRead and native confIDs",
+      "sprite_record_offset": 37128,
+      "observed_name_bytes": "6d696e655f69726f6e",
+      "name_unknown_bytes": 0,
+      "identity": "intact original sprite name",
+      "name_length_field": "unknown; 9-character alignment corroborated by name, known GUID and atlas map",
+      "sprite_guid": "f71c246637ae4d43a1d8ba7217e6d429",
+      "sprite_guid_unknown_bytes": 0,
+      "sprite_guid_offset": 37204,
+      "atlas_entry_offset": 17488,
+      "atlas_rect_original": [
+        807.0,
+        715.628173828125,
+        353.0,
+        324.0
+      ],
+      "atlas_rect_unknown_byte_positions": [
+        8
+      ],
+      "width_reconstruction": {
+        "reason": "one unknown atlas-width byte; replaced from independently known Sprite m_Rect.width",
+        "sprite_width_decoded_offset": 37152,
+        "known_width": 353.0
+      },
+      "texture_rect_unity_bottom_left": [
+        807.0,
+        715.628173828125,
+        353.0,
+        324.0
+      ],
+      "raster_crop_unity_bottom_left": [
+        807,
+        715,
+        353,
+        325
+      ],
+      "file": "mine_iron.png",
+      "png_sha256": "81fcd73f4f89805c010475a0a854f6df380598763b062bdb4b1c17fb4120d67d",
+      "texture_format": "ASTC 6x6",
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "texture_source_offset_decoded": 412032,
+      "texture_source_sha256": "2adea68dd9cbd4409396f25c439ab4d833fb08581b246a7d97084b17115b0758",
+      "unknown_source_astc_blocks": 0,
+      "texture_coverage": "entire ASTC atlas independently standard-LZ4 decoded, no artificial-dictionary bytes",
+      "bundle_member": "assets/data/atlas_world_building_7a7e5afb92ba044c3df1106d8d4f131a.unity3d",
+      "bundle_sha256": "2f2e1835293984e1233ed2e93aa3f39a4ac73bc02b0bedd1dc02f95094c35a00"
+    }
+  ],
+  "fixed_site_logos": [
+    {
+      "id": "worldfield_tronghold_bg_001",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 36352,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "texture_resource_offset": 3043600,
+      "texture_source_offset_decoded": 3085232,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; higher bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_001.png",
+      "png_sha256": "1a21158f9d12e25b8eaabae1ea82d5696b23548ebb85122990dc601e61f8ffc4",
+      "texture_source_sha256": "fdc94df04a442026f42173d517f60be68c8c4d190a2722c71be89af3e59a833a",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    },
+    {
+      "id": "worldfield_tronghold_bg_002",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 41400,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "texture_resource_offset": 3274000,
+      "texture_source_offset_decoded": 3315632,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; higher bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_002.png",
+      "png_sha256": "eb44f8c95bdb53dee936b93ff4daec69b0012403b53e399b4e6a720ac7613cd6",
+      "texture_source_sha256": "5d1d89d3ec33a75f8426d153a8dcab05314ae4deb058e6199c00a6a5571583d0",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    },
+    {
+      "id": "worldfield_tronghold_bg_003",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 22616,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "texture_resource_offset": 1083072,
+      "texture_source_offset_decoded": 1124704,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; higher bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_003.png",
+      "png_sha256": "d405bd8c02d95333b09f20750473144d78ce6a7cd127b54cd43fba78682bf047",
+      "texture_source_sha256": "96b586e97dbd87458dbacd2bf6553f6258a3a96f2887d8d0e284a489efc09e3d",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    },
+    {
+      "id": "worldfield_tronghold_bg_004",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 17128,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "metadata_confidence": "inferred contiguous first three equal-size textures; missing low offset byte not observed",
+      "texture_resource_offset": 460800,
+      "texture_source_offset_decoded": 502432,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "inferred contiguous prefix texture partition [005,008,004], two middle offset bytes agree; not direct metadata observation",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_004.png",
+      "png_sha256": "763cc7ac2c8609595cd245d68b301aefb06560bbc4c5442d0f6fc6f8e6302745",
+      "texture_source_sha256": "8b376cfa684f685c833f27e223ee007b3dc1353ba1546ae77a3e70787e69c0b2",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    },
+    {
+      "id": "worldfield_tronghold_bg_005",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 12816,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "status": "not exported: stream offset wholly unknown and first resource image contains unknown source bytes"
+    },
+    {
+      "id": "worldfield_tronghold_bg_006",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 31176,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "texture_resource_offset": 2465472,
+      "texture_source_offset_decoded": 2507104,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; higher bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_006.png",
+      "png_sha256": "05d54920c86ad7e4368c57fbeb370a3361f37242049c3a8c456bc6cdeb395476",
+      "texture_source_sha256": "554d1c3a7032fa88c5475da65af30f962fba06c38bce49db1765f33c3ea4f679",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    },
+    {
+      "id": "worldfield_tronghold_bg_007",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 28040,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "texture_resource_offset": 1543872,
+      "texture_source_offset_decoded": 1585504,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; higher bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_007.png",
+      "png_sha256": "60de7904998695c374595d4a794c7a8f817bb8ed52008a1c3f6686ea6d1943ab",
+      "texture_source_sha256": "80a133ebb1adaa3ecd1bef50a55d06b6a2b954c2aef56aba6ce49cbd6fc3457c",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    },
+    {
+      "id": "worldfield_tronghold_bg_008",
+      "name_unknown_bytes": 0,
+      "texture_record_offset": 13048,
+      "texture_size": [
+        480,
+        480
+      ],
+      "bundle_member": "ui_single_split_worldfield_5699a84d2afafa23ba4b097462cf3eeb.unity3d",
+      "bundle_sha256": "5906d525cd6c61de4a8c7832bd18d9aa7bdaa18b423e79bcbed8cdc8b370e550",
+      "source": "user emulator disk cache pulled with REA; not XAPK",
+      "rea_pull_evidence_id": "ev_06cab833f2fa9deb420200f8a30e283f33aa9c61f46a9ecdeae13287e2f2cdf1",
+      "texture_format_field": "unknown; ASTC4x4 inferred from texture-size/stream-size and successful structured decode",
+      "texture_format": "ASTC 4x4 (inference)",
+      "texture_stream_offset_unknown_byte_positions": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "texture_stream_size_unknown_byte_positions": [
+        0,
+        3
+      ],
+      "metadata_confidence": "inferred contiguous first three equal-size textures; missing low offset byte not observed",
+      "texture_resource_offset": 230400,
+      "texture_source_offset_decoded": 272032,
+      "texture_source_size": 230400,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "inferred contiguous prefix texture partition [005,008,004], two middle offset bytes agree; not direct metadata observation",
+      "texture_size_reconstruction": "480² ASTC4x4 gives230400; two middle size bytes agree",
+      "status": "exported: all compressed source image bytes known; encoding inferred",
+      "file": "worldfield_tronghold_bg_008.png",
+      "png_sha256": "f81fd8a2d075ecadb776b7576c67679700b40a92d83c8629474fac9eab3084e4",
+      "texture_source_sha256": "ca98526f4fa440f06747ecf8c5f96f9e73ff28a6926633d6cc0265e3d6a2c882",
+      "native_map_building_render": false,
+      "kind": "original minimap/logo texture"
+    }
+  ],
+  "event_building_logos": [
+    {
+      "id": "worldfield_allianceterritory_001",
+      "map_object_type": 34,
+      "variant": 1,
+      "variant_kind": "building level",
+      "label": "Mobilisation",
+      "texture_record_offset": 80520,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 2672560,
+      "texture_source_offset_decoded": 2787004,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_001.png",
+      "png_sha256": "5e77a445a5f5fd5795f65b0957b9159e53177471061edbfe0ed76c6ad6810331",
+      "texture_source_sha256": "2b74b5ab14fbd4e3e4fa3cd9fcffad0ecd7127545cdb16871fa046e3c892a2fa"
+    },
+    {
+      "id": "worldfield_allianceterritory_002",
+      "map_object_type": 34,
+      "variant": 2,
+      "variant_kind": "building level",
+      "label": "Mobilisation",
+      "texture_record_offset": 108856,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 3762736,
+      "texture_source_offset_decoded": 3877180,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_002.png",
+      "png_sha256": "dbfb4738a45fcf5a0c040011470e04a0b89d6679a9502366c8d92732fb485da0",
+      "texture_source_sha256": "1e7c351a50bef8c834a7115df56c5884ae7c5ec74791c3d4573af046872b9307"
+    },
+    {
+      "id": "worldfield_allianceterritory_003",
+      "map_object_type": 34,
+      "variant": 3,
+      "variant_kind": "building level",
+      "label": "Mobilisation",
+      "texture_record_offset": 25840,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 640224,
+      "texture_source_offset_decoded": 754668,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_003.png",
+      "png_sha256": "c275db0189eb97002114df2de8c04dd9fe674dc610835567af9b223373865a2a",
+      "texture_source_sha256": "92812b2ad18aed6ba66d64ba21d4eb0b0a1007984e782107613419fecefd0a97"
+    },
+    {
+      "id": "worldfield_allianceterritory_004",
+      "map_object_type": 34,
+      "variant": 4,
+      "variant_kind": "building level",
+      "label": "Mobilisation",
+      "texture_record_offset": 109096,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 3816560,
+      "texture_source_offset_decoded": 3931004,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_004.png",
+      "png_sha256": "f31cf14bb9e86ac222cf2c5e0362e1c90bb99824b7dd7f9380a6fccbdbfb7169",
+      "texture_source_sha256": "bd133058be0c4337ce57ef730df1d99fec0b10673b70b91daa0f8f6c1964096d"
+    },
+    {
+      "id": "worldfield_allianceterritory_018",
+      "map_object_type": 36,
+      "variant": 1,
+      "variant_kind": "building level",
+      "label": "Confrontation",
+      "texture_record_offset": 89352,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 2921616,
+      "texture_source_offset_decoded": 3036060,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_018.png",
+      "png_sha256": "52c5c7bc56697996e64f000512671e49a048634dd9bc22603fa7cbf331a1b124",
+      "texture_source_sha256": "888958b11c4a272c8bba4f59e46ecf14285d73af6793658898f203abd77bc79b"
+    },
+    {
+      "id": "worldfield_allianceterritory_019",
+      "map_object_type": 36,
+      "variant": 2,
+      "variant_kind": "building level",
+      "label": "Confrontation",
+      "texture_record_offset": 55304,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 1616848,
+      "texture_source_offset_decoded": 1731292,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_019.png",
+      "png_sha256": "7c32e36e62e628bcde4a40bfe03335c56d73432aad1e36d084536fd74a9ad1da",
+      "texture_source_sha256": "846210c2863b24f28d33db7421e2186e4e8bc995a3b9ad6c14c15aeb1e5fce93"
+    },
+    {
+      "id": "worldfield_allianceterritory_020",
+      "map_object_type": 36,
+      "variant": 3,
+      "variant_kind": "building level",
+      "label": "Confrontation",
+      "texture_record_offset": 89592,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 2975440,
+      "texture_source_offset_decoded": 3089884,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_020.png",
+      "png_sha256": "3e7993913f03ecdcf36d83209bfeb55e8599b27e27f8889ae9bede927824c81c",
+      "texture_source_sha256": "08cf22748d65992028d464fd31bc64c7c41c0c6f9c0bb643a6920a28e403e7cf"
+    },
+    {
+      "id": "worldfield_allianceterritory_021",
+      "map_object_type": 36,
+      "variant": 4,
+      "variant_kind": "building level",
+      "label": "Confrontation",
+      "texture_record_offset": 46256,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 1128416,
+      "texture_source_offset_decoded": 1242860,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_021.png",
+      "png_sha256": "db80ce96047a9b10fa04fe7ccc845af00191e16abe9b171b805b15d728e2bdd7",
+      "texture_source_sha256": "d340d7e0fa114452a3a0ccfb85554f269fe6beafa8695186dbeddd4ce6103151"
+    },
+    {
+      "id": "worldfield_allianceterritory_022",
+      "map_object_type": 37,
+      "variant": 1,
+      "variant_kind": "building level",
+      "label": "Arsenal",
+      "texture_record_offset": 105344,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 3474256,
+      "texture_source_offset_decoded": 3588700,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_022.png",
+      "png_sha256": "29f6e979b72c2f9a059f5f100af322208245ac2fffbea2f1f30081248e01a854",
+      "texture_source_sha256": "e8b57f4a5febefd75b23c3b9ae2b40881933aae280b0340e024580379d166247"
+    },
+    {
+      "id": "worldfield_allianceterritory_023",
+      "map_object_type": 38,
+      "variant": 1,
+      "variant_kind": "building level",
+      "label": "Duel",
+      "texture_record_offset": 22232,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_attribute.lua",
+      "offset_unknown_byte_positions": [
+        0,
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "status": "not exported: low24bit stream offset contains unknown bytes"
+    },
+    {
+      "id": "worldfield_allianceterritory_024",
+      "map_object_type": 39,
+      "variant": 15,
+      "variant_kind": "configuration ID",
+      "label": "Mine sécurisée — nourriture",
+      "texture_record_offset": 44704,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_conf.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 1074592,
+      "texture_source_offset_decoded": 1189036,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_024.png",
+      "png_sha256": "8f3ad0144e5386481966ce527e4fb0774074b1637f5840ddbe1dfc2cbb800986",
+      "texture_source_sha256": "df83eecdc7db4741f09e6c8a076bb61bcf0f14fc344eec911014bda6234a3866"
+    },
+    {
+      "id": "worldfield_allianceterritory_025",
+      "map_object_type": 39,
+      "variant": 16,
+      "variant_kind": "configuration ID",
+      "label": "Mine sécurisée — bois",
+      "texture_record_offset": 75840,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_conf.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 2437904,
+      "texture_source_offset_decoded": 2552348,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_025.png",
+      "png_sha256": "b947b27edb3562bc5595a2fae32485ccf976b2818abd7902ce24c02ea1c2275a",
+      "texture_source_sha256": "fde6815b333f1d7bc726b15913c9c14de82aacc8eece494974400388e09ec25b"
+    },
+    {
+      "id": "worldfield_allianceterritory_026",
+      "map_object_type": 39,
+      "variant": 17,
+      "variant_kind": "configuration ID",
+      "label": "Mine sécurisée — charbon",
+      "texture_record_offset": 55064,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_conf.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 1563024,
+      "texture_source_offset_decoded": 1677468,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_026.png",
+      "png_sha256": "7208e49608f2b36fc706c1875a564c6f34c8eb98255c2bdd54a7e11bb15b57c7",
+      "texture_source_sha256": "1460c5b188cfa7b2c60ac0d834a0574b729fb8eef7973ec58d6a642560c780e8"
+    },
+    {
+      "id": "worldfield_allianceterritory_027",
+      "map_object_type": 39,
+      "variant": 18,
+      "variant_kind": "configuration ID",
+      "label": "Mine sécurisée — fer",
+      "texture_record_offset": 110560,
+      "texture_size": [
+        230,
+        230
+      ],
+      "name_unknown_bytes": 0,
+      "name_length_unknown_byte_positions": [
+        1,
+        2,
+        3
+      ],
+      "name_alignment": "known exact 32-byte name and low length byte; high length bytes unavailable",
+      "bundle_member": "ui_single_split_worldfield_part_1_d0483550fecd41ee4efc2f891daca8ba.unity3d",
+      "bundle_sha256": "8e4a4a71ecc1f383b8c95b4bb185988311d5ac8ff0f5ce2265aa9f1d98534804",
+      "rea_pull_evidence_id": "ev_85f0330c6559dc0f47d3c0a05419002e5eb1a4ffaa597b2f3280bbfb462362c5",
+      "source": "user emulator disk cache already pulled through REA",
+      "texture_format": "ASTC 4x4 (inferred)",
+      "texture_format_field": "unavailable; inferred from dimensions, stream size and structured decode",
+      "native_map_building_render": false,
+      "kind": "original alliance UI shape/logo, not multipart native scene",
+      "configuration_source": "analysis/lua/decompiled/game_config_default_alliance_building_conf.lua",
+      "offset_unknown_byte_positions": [
+        3,
+        4
+      ],
+      "size_unknown_byte_positions": [
+        2,
+        3
+      ],
+      "texture_resource_offset": 3987712,
+      "texture_source_offset_decoded": 4102156,
+      "texture_source_size": 53824,
+      "unknown_source_bytes": 0,
+      "offset_reconstruction": "known low24bits; high bytes forced zero by bounded resource size",
+      "texture_size_reconstruction": "observed low16bits equal ceil(230/4)²*16; high size bytes unknown, inferred ASTC4x4",
+      "status": "exported: all source pixel bytes known; encoding inferred",
+      "file": "worldfield_allianceterritory_027.png",
+      "png_sha256": "7b553e37902a11e8b5e427cc8b791504774fdc5fa813deae6a7cb619706bbf0c",
+      "texture_source_sha256": "19cf622bb9909e100f94b0d1428353cc336f090598ef6f3d50aedc386e13f139"
+    }
+  ],
+  "major_fort_scene_sprites": [
+    {
+      "id": "building2101",
+      "map_object_type": 21,
+      "file": "building2101.png",
+      "kind": "original Texture2D from major-fort scene bundle",
+      "identity_source": "WorldMapMajorFortItem.InitModel names scene/world/building/building2101.prefab",
+      "texture_name": "building2101",
+      "texture_name_offset": 168328,
+      "sprite_name_offset": 155824,
+      "sprite_rect": [
+        0.0,
+        0.0,
+        1120.0,
+        806.0
+      ],
+      "sprite_guid": "a2ec14e913563643af5e3ea22fef1959",
+      "sprite_geometry_unknown_bytes": 0,
+      "sprite_vertex_count": 4,
+      "sprite_indices": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "sprite_vertices": [
+        [
+          -5.599999904632568,
+          4.03000020980835,
+          0.0
+        ],
+        [
+          5.599999904632568,
+          4.03000020980835,
+          0.0
+        ],
+        [
+          -5.599999904632568,
+          -4.03000020980835,
+          0.0
+        ],
+        [
+          5.599999904632568,
+          -4.03000020980835,
+          0.0
+        ]
+      ],
+      "sprite_render_texture_rect": [
+        0.0,
+        0.0,
+        1120.0,
+        806.0
+      ],
+      "sprite_texture_file_id": 0,
+      "sprite_texture_path_id": -910100153588486748,
+      "texture_object_table_offset": 154564,
+      "texture_object_byte_start": 12504,
+      "texture_object_byte_size": 216,
+      "texture_object_type_index": 1,
+      "binding": "intact Sprite m_RD.texture PPtr matches original serialized object table path ID; object offset agrees with known Texture2D body",
+      "texture_size": [
+        1120,
+        806
+      ],
+      "texture_format": "RGBA32 (intact serialized TextureFormat=4)",
+      "texture_stream_offset": 22880,
+      "texture_stream_size": 3610880,
+      "texture_source_offset_decoded": 214191,
+      "texture_metadata_unknown_bytes": 0,
+      "source_pixel_unknown_bytes": 0,
+      "pixel_coverage": "all original pixel bytes independently standard-LZ4 decoded in blocks1 onward",
+      "bundle_member": "scene_world_building_building2101_d37e4e85898524ea01af758883e3ab0b.unity3d",
+      "bundle_sha256": "87f68e81c63f7a1edc6e31fe73c1d0ed7f6f1a4728c8e47dd9cc4244df775c70",
+      "rea_pull_evidence_id": "ev_cd0a48215a38eb16dbefd7f1a7d3e2122eab522e25eaf8f253ab49536e47b1e1",
+      "png_sha256": "6d507b4f3a9240a8a3b8d352897ff5d9cf2632d41c3973083dfdbb59d1b6e80d",
+      "texture_source_sha256": "16e77378156dc173600ef2026eece556679e38c0e697a37a90e2f03fe777b5a1",
+      "transform": "Unity texture bottom-left origin flipped vertically for browser raster",
+      "small_logo005": false,
+      "limitations": [
+        "Original scene Texture2D, not the separate worldfield_tronghold_bg_005 minimap logo.",
+        "A browser rendering of the full texture does not reproduce scene meshes, layering, materials or animation.",
+        "SpriteRenderer runtime transforms/effects not reconstructed; original Sprite→Texture2D binding, full rect and quad geometry are established statically."
+      ]
+    }
+  ],
+  "hq_assignment": "sprite-34272 is visually inferred; exact prefab-to-sprite identity unproved.",
+  "alliance_colors": "Local editable palette, not the unrecovered native flag_bg background sprites.",
+  "royal_capital_raster": {
+    "id": "building2001",
+    "file": "building2001-rgba-source-known.png",
+    "kind": "original capital RGBA raster; only unobserved transparent bottom padding removed",
+    "source_bundle": "assets/data/art_scene_world_building_stronghold_depend_6b101d6c62400d4df4bf3f5f2a4632a5.unity3d",
+    "source_bundle_sha256": "8c33889ea78a135549671c9d6d99d6aee8f0cdd0676a5f7559e714ea3a236252",
+    "source_apk_sha256": "302206ad4c94e757e8cc56dabe56a6e189df5f67d8f91ced615fe0aa3fe12390",
+    "rea_inventory_evidence_id": "ev_cd8ee16b3376643c8d4f1f9e21bd71983233d271dc9fe61cda14b781f173af5c",
+    "logical_texture_size": [
+      1146,
+      1264
+    ],
+    "exported_texture_size": [
+      1146,
+      1238
+    ],
+    "crop_unity_bottom_left": [
+      0,
+      26,
+      1146,
+      1238
+    ],
+    "crop_top_left_origin_offset": [
+      0,
+      0
+    ],
+    "removed_bottom_padding_rows": 26,
+    "removed_rows_native_astc_alpha_range": [
+      0,
+      0
+    ],
+    "removed_rows_astc_source_unknown_bytes": 0,
+    "png_alpha_bbox": [
+      48,
+      18,
+      1122,
+      1151
+    ],
+    "source_stream_offset": 119184,
+    "source_decoded_offset": 132992,
+    "source_size": 5674992,
+    "source_pixel_unknown_bytes": 0,
+    "source_byte_origin": "independently standard-LZ4 decoded blocks 1 onward; no suffix bytes enter exported pixels",
+    "source_sha256": "2b3462990a4423c9e30632fa8568c3ac6650eb988d964fa245cbd51639819581",
+    "png_sha256": "c9112638c9db527206df469be3230325979551167f0f10abbb72d3010b56ac0c",
+    "format": "RGBA32 inferred from exact stream-size/dimension relation and direct image decode; native format field still damaged",
+    "identity_corroboration": "Known SpriteAtlas building2001 GUID/1146x1264 rectangle; RGBA versus independent ASTC6x6 raster agrees",
+    "comparison_visible_pixel_count": 776867,
+    "comparison_mean_absolute_rgb_error": 9.688726641754638,
+    "comparison_median_absolute_rgb_error": 3.0,
+    "comparison_rgb_correlation": 0.9350670618384184,
+    "comparison_alpha_correlation": 0.9975403544485283,
+    "transform": "vertical flip only, then original known pixels; no generated replacement, blending, inpainting or mirroring",
+    "protection_effects": false,
+    "scene_reconstructed": false,
+    "limitations": [
+      "26 unobserved RGBA padding rows are not exported; no bit-exact claim about their hidden RGB values.",
+      "The native SpriteRenderer pivot/mesh/scene transform remains separate and is not established by this raster export.",
+      "Object identity is cross-encoding corroborated, not recovered from an intact native serialized object table."
+    ]
+  },
+  "recovered_texture_library": {
+    "count": 170,
+    "texture_count": 168,
+    "source_exports": 202,
+    "path": "/recovered-art.html",
+    "note": "Local original texture catalog; not a complete reconstructed native map."
+  }
+}
