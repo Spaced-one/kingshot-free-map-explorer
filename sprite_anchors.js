@@ -44,6 +44,14 @@ export const SPRITE_GROUND_ANCHORS = {
   'worldfield_allianceterritory_027.png': [120,159]
 };
 
-// Small, image-only upward adjustment in source pixels. The ground marker
-// stays at the projected coordinate; scaling/hover/picking share this offset.
-export const SPRITE_DISPLAY_LIFTS = {'alliance_trap_open.png': 16};
+// Small, image-only vertical adjustments in source pixels. The ground marker
+// stays at the projected coordinate; scaling/hover/picking share each offset.
+export const SPRITE_DISPLAY_LIFTS = {
+  'alliance_trap_open.png': 40,
+  'sprite-34272.png': 54,
+  'alliance_flag.png': -30,
+  'alliance_flag_broken.png': -30
+};
+
+// Small image-only horizontal nudges, in source pixels.
+export const SPRITE_DISPLAY_SHIFTS = {'sprite-34272.png': 18};

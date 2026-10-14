@@ -1,9 +1,9 @@
 import {SPRITE_GEOMETRY} from './sprite_geometry.js';
-import {SPRITE_GROUND_ANCHORS,SPRITE_DISPLAY_LIFTS} from './sprite_anchors.js';
+import {SPRITE_GROUND_ANCHORS,SPRITE_DISPLAY_LIFTS,SPRITE_DISPLAY_SHIFTS} from './sprite_anchors.js';
 import {FOOTPRINT_SIZES} from './footprint_sizes.js';
 import {translateSource} from './i18n.js';
 
-export const MAX_ZOOM = 40;
+export const MAX_ZOOM = 60;
 export const QUICK_FILTERS = [
   {id:'everything',label:'Tout afficher',unfiltered:true},
   {id:'all',label:'Tous les bâtiments'},
@@ -61,10 +61,12 @@ export function isUILogo(row){return row.kind==='fixed'||/^worldfield_alliancete
 // Display-only calibration from the supplied game screenshots (13 Oct 2026).
 // Full PNG widths at zoom 24, NOT occupied cells or recovered Unity scales.
 // Alpha widths: castle5 ~46px, HQ ~75px, bear ~87px, quarry ~57px,
-// Arsenal ~55px, Mobilisation ~51px, flag ~20px. Keep native aspect ratios.
+// Arsenal/Confrontation ~46px, Mobilisation ~51px, flag ~20px. Keep native
+// aspect ratios. The two honour-building UI logos use smaller full-image
+// widths because their opaque silhouettes occupy different portions of PNG.
 export const MARKER_REFERENCE_WIDTHS=Object.freeze({
   players:50,hq:84,bears:90,flags:24,mines:64,
-  arsenal:76,mobilization:62,quarry:62,foundry:62,
+  arsenal:63,confrontation:54,mobilization:62,quarry:62,foundry:62,
   // High-resolution capital: reference transferred from the screenshot-matched
   // 480px logo through two matching source details (scale3.475, NCC>.93).
   // This is display calibration, not a recovered native pivot or mesh scale.
@@ -81,17 +83,23 @@ export function markerDisplaySize(row,zoom,iso=false){
   }
   // Unmatched categories/artwork retain the earlier fallback. In particular,
   // safe alliance mines are not conflated with the pictured production deposits.
-  if(!SPRITE_GEOMETRY[sprite(row)]||(!Object.hasOwn(MARKER_REFERENCE_WIDTHS,cat)&&![34,37].includes(row.type))){
+  if(!SPRITE_GEOMETRY[sprite(row)]||(!Object.hasOwn(MARKER_REFERENCE_WIDTHS,cat)&&![34,36,37].includes(row.type))){
     const cap=isUILogo(row)?90:cat==='flags'?52:cat==='hq'?100:cat==='bears'?90:cat==='players'?85:cat==='mines'?70:46;
     return Math.max(17,Math.min(cap*Math.max(1,zoom/24),zoom*(isUILogo(row)?12:cat==='flags'?5:cat==='mines'?8:cat==='resources'?4:10)));
   }
-  const key=row.type===37?'arsenal':row.type===34?'mobilization':cat==='mines'&&row.conf_id===301?'quarry':cat==='mines'&&row.conf_id===401?'foundry':cat;
+  const key=row.type===37?'arsenal':row.type===36?'confrontation':row.type===34?'mobilization':cat==='mines'&&row.conf_id===301?'quarry':cat==='mines'&&row.conf_id===401?'foundry':cat;
   const reference=MARKER_REFERENCE_WIDTHS[key];
   // Track ground scale continuously: no cap plateau between zoom 7 and 24.
   // Both illustrated views have the same sprite-to-ground proportions.
   return Math.max(17,reference*zoom/24*(iso?Math.SQRT2*.85:1));
 }
-export function visualPosition(row){return isUILogo(row)?{x:row.x+(row.width??0)/2,y:row.y+(row.height??0)/2}:{x:row.x,y:row.y};}
+export function visualPosition(row){
+  // Honour buildings share the coordinate anchor used by neighbouring player
+  // castles in illustrated views. Centering their 2x2 footprint moved them
+  // one cell off the intended diagonal; Plan still uses footprintCenter().
+  if([34,36,37,38,39].includes(row.type))return {x:row.x,y:row.y};
+  return isUILogo(row)?{x:row.x+(row.width??0)/2,y:row.y+(row.height??0)/2}:{x:row.x,y:row.y};
+}
 export function objectFootprint(row){
   const type=row.uid!=null?1:row.type;
   const spec=Number.isInteger(type)&&Object.hasOwn(FOOTPRINT_SIZES,type)?FOOTPRINT_SIZES[type]:null;
@@ -118,11 +126,12 @@ export function markerArtwork(row,image,size){
   const foot=measured?record.foot_y*scale:height;
   const anchor=measured&&!unchanged?SPRITE_GROUND_ANCHORS[file]:null;
   const displayLift=anchor?(SPRITE_DISPLAY_LIFTS[file]??0)*scale:0;
-  const left=anchor?-anchor[0]*scale:-size/2;
+  const displayShift=anchor?(SPRITE_DISPLAY_SHIFTS[file]??0)*scale:0;
+  const left=anchor?-anchor[0]*scale+displayShift:-size/2;
   const top=image&&!unchanged?-(anchor?anchor[1]*scale:foot)-displayLift:legacyTop;
   const inkBottom=top+bounds[3]*scale;
   const legacyLabel=size*(isUILogo(row)?.55:.17)+4;
-  return {width:size,height,left,top,groundY:0,unchanged,displayLift,
+  return {width:size,height,left,top,groundY:0,unchanged,displayLift,displayShift,
     inkLeft:left+bounds[0]*scale,inkRight:left+bounds[2]*scale,
     inkTop:top+bounds[1]*scale,inkBottom,
     labelY:unchanged||!image?legacyLabel:Math.max(size*.14,inkBottom)+4};
