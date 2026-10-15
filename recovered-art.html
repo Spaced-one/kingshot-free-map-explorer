@@ -6,6 +6,7 @@
   <title>Textures récupérées · Kingdom Atlas</title>
   <meta name="description" content="Collection locale des images originales récupérées des fichiers Kingshot.">
   <link rel="stylesheet" href="./recovered_art.css">
+  <link rel="stylesheet" href="./monster_viewer.css">
   <script type="module" src="./recovered_art.js"></script>
 </head>
 <body>
@@ -13,6 +14,24 @@
   <main>
     <h1>Images originales récupérées</h1>
     <p class="intro">Le Château Royal détaillé et les textures extraites des fichiers du jeu, sans bouclier ajouté ni pixels inventés. Une texture brute n’est pas forcément une image de bâtiment prête à placer.</p>
+    <section id="monster-viewer" class="monster-viewer" aria-labelledby="monster-viewer-title" hidden>
+      <div class="monster-viewer-copy">
+        <p class="eyebrow">EXPÉRIMENTAL · CONSULTATION LOCALE</p>
+        <h2 id="monster-viewer-title">Aperçu 3D des monstres</h2>
+        <p>Tournez le modèle pour examiner la texture récupérée. Seuls les modèles 035, 015, 025 et Rose Wendigo sont proposés ici&nbsp;: leur maillage et leurs UV Unity originaux sont établis. Les autres textures restent consultables en 2D jusqu’à récupération complète de leur maillage natif.</p>
+        <label for="monster-select">Monstre affiché</label>
+        <select id="monster-select"></select>
+        <div class="monster-actions">
+          <button id="monster-motion" type="button" aria-pressed="true">Mettre l’animation en pause</button>
+          <button id="monster-reset" type="button">Réinitialiser la vue</button>
+        </div>
+        <p id="monster-status" class="monster-status" role="status"></p>
+      </div>
+      <div class="monster-stage">
+        <canvas id="monster-canvas" tabindex="0" aria-label="Prévisualisation 3D interactive du monstre. Faites glisser pour tourner le modèle."></canvas>
+        <p class="canvas-help">Glisser pour tourner · Molette pour zoomer</p>
+      </div>
+    </section>
     <div class="controls">
       <label>Rechercher une texture<input id="art-search" type="search" placeholder="Château, building, terrain…" autocomplete="off"></label>
       <label>Catégorie<select id="art-category"><option value="" data-i18n="library.all_categories">Toutes les catégories</option></select></label>

@@ -1,0 +1,30 @@
+{
+  "t_world_monster_035_d": {
+    "file": "./assets/recovered-models/t_world_monster_035_d.glb",
+    "mesh_name": "3d_world_monster_035",
+    "vertices": 3309,
+    "indices": 12162,
+    "sha256": "cac7ca01d5fccf03866a43255881b133fee003c4ae9492c3ac46c3692243a8b0"
+  },
+  "t_monster_rose_wendigo_d": {
+    "file": "./assets/recovered-models/t_monster_rose_wendigo_d.glb",
+    "mesh_name": "3d_monster_rose_wendigo",
+    "vertices": 4197,
+    "indices": 16947,
+    "sha256": "e3148c2e05736a32a51c4b2f55bcdf3d6acb4eafb90d4d215c1ec9584d9e324a"
+  },
+  "t_world_monster_015": {
+    "file": "./assets/recovered-models/t_world_monster_015.glb",
+    "mesh_name": "3d_world_monster_015",
+    "vertices": 2281,
+    "indices": 9702,
+    "sha256": "7f91eea260ae4e1ecd46952583cdcdb1bf1dbb960a28f00ea361beef6d89d34b"
+  },
+  "t_world_monster_025": {
+    "file": "./assets/recovered-models/t_world_monster_025.glb",
+    "mesh_name": "world_monster_025",
+    "vertices": 971,
+    "indices": 2829,
+    "sha256": "cfd218ebedca5411d52dddfececd8da51e03d838ca62a8e00f27b1ae92e99a97"
+  }
+}
