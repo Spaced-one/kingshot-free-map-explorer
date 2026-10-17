@@ -9,15 +9,28 @@ const $=id=>document.getElementById(id);
 const msg=(key,fallback,variables={})=>{const translated=t(key,variables);return translated===key?String(fallback).replace(/{{\s*([\w.-]+)\s*}}/g,(_,name)=>variables[name]??''):translated;};
 const loadStored=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)) ?? fallback;}catch{return fallback;}};
 const saveStored=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{toast(msg('storage.unavailable','Le navigateur ne permet pas la sauvegarde locale.'));}};
+const pageConfig=globalThis.KINGDOM_PAGE&&typeof globalThis.KINGDOM_PAGE==='object'?globalThis.KINGDOM_PAGE:{};
+const KINGDOM=Number.isInteger(pageConfig.kingdom)&&pageConfig.kingdom>0?pageConfig.kingdom:690;
+const DATA_PATH=typeof pageConfig.dataPath==='string'&&(pageConfig.dataPath.startsWith('./data/')||pageConfig.dataPath.startsWith('./data/'))?pageConfig.dataPath:'./data/world.json';
+const STATIC_ONLY=pageConfig.staticOnly===true;
+const storagePrefix=`atlas${KINGDOM}`;
+function applyRealmText(root=document){
+  if(KINGDOM===690)return;
+  const replace=value=>typeof value==='string'?value.replace(/\b690\b/g,String(KINGDOM)):value;
+  const walker=root.createTreeWalker?.(root.body,globalThis.NodeFilter?.SHOW_TEXT??4);
+  if(walker){const nodes=[];let node;while((node=walker.nextNode())){if(!['SCRIPT','STYLE'].includes(node.parentElement?.tagName))nodes.push(node);}for(const text of nodes)text.nodeValue=replace(text.nodeValue);}
+  root.querySelectorAll?.('[aria-label],[title],[placeholder],[content]').forEach(node=>{for(const attribute of ['aria-label','title','placeholder','content'])if(node.hasAttribute(attribute))node.setAttribute(attribute,replace(node.getAttribute(attribute)));});
+  root.title=replace(root.title);
+}
 let world,allRows=[],filtered=[],results=[],alliances=new Map(),tab='all',selected=null,limit=100,timer=null,poll=null,lastRefresh='idle';
 let terrain=null,freshnessTimer=null,zoneLimit=100,mobileUI=null,canRefresh=false;
 const pageSize=()=>mobileUI?.narrow?20:100;
-const favorites=new Set(loadStored('atlas690-favorites',[]));
-const customColors=loadStored('atlas690-colors',{});
-const homeStorageKey='atlas690-home-castle';
+const favorites=new Set(loadStored(`${storagePrefix}-favorites`,[]));
+const customColors=loadStored(`${storagePrefix}-colors`,{});
+const homeStorageKey=`${storagePrefix}-home-castle`;
 let homeId=loadStored(homeStorageKey,null),locatedHome=false;
 if(typeof homeId!=='string')homeId=null;
-const filters={query:'',alliance:'',min:0,max:0,invasions:false,origin:'',kingdom:690,quick:'everything',layers:tabLayers('all')};
+const filters={query:'',alliance:'',min:0,max:0,invasions:false,origin:'',kingdom:KINGDOM,quick:'everything',layers:tabLayers('all')};
 const quickButtons=new Map();
 const map=new WorldMap($('map'),{
   select:(row,center=true)=>select(row,center),
@@ -28,11 +41,11 @@ const map=new WorldMap($('map'),{
 });
 mobileUI=setupResponsive({map,onLayoutChange:()=>{limit=pageSize();zoneLimit=pageSize();if(world){renderResults();renderTools();}}});
 limit=zoneLimit=pageSize();
-map.showHoverCoordinates=loadStored('atlas690-hover-coordinates',true)!==false;
+map.showHoverCoordinates=loadStored(`${storagePrefix}-hover-coordinates`,true)!==false;
 $('hover-coordinates').checked=map.showHoverCoordinates;
-map.showRoyalGround=loadStored('atlas690-royal-ground',true)!==false;
+map.showRoyalGround=loadStored(`${storagePrefix}-royal-ground`,true)!==false;
 $('royal-ground').checked=map.showRoyalGround;
-$('show-freshness').checked=loadStored('atlas690-show-freshness',false)===true;
+$('show-freshness').checked=loadStored(`${storagePrefix}-show-freshness`,false)===true;
 function el(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!=null)node.textContent=text;return node;}
 function toast(message){clearTimeout(timer);$('toast').textContent=message;$('toast').hidden=false;timer=setTimeout(()=>$('toast').hidden=true,3500);}
 async function copy(value){try{await navigator.clipboard.writeText(value);toast(msg('clipboard.copied','Copié dans le presse-papiers.'));}catch{toast(msg('clipboard.unavailable','Copie indisponible ; sélectionnez les coordonnées dans la fiche.'));}}
@@ -74,8 +87,8 @@ for(const [i,preset] of QUICK_FILTERS.entries()){
 }
 
 async function loadWorld(){
-  const response=await fetch('./data/world.json',{cache:'no-store'});if(!response.ok)throw new Error(msg('snapshot.unavailable','Instantané local indisponible.'));
-  world=validateSnapshot(await response.json());
+  const response=await fetch(DATA_PATH,{cache:'no-store'});if(!response.ok)throw new Error(msg('snapshot.unavailable','Instantané local indisponible.'));
+  world=validateSnapshot(await response.json(),KINGDOM);
   allRows=[...world.castles,...world.buildings,...(world.fixed || []).map(row=>({...row,kind:'fixed'}))];
   $('all-count').textContent=formatNumber(allRows.length);
   alliances=new Map(world.alliances.map(a=>[String(a.id),a]));
@@ -184,7 +197,7 @@ for(const [id,mode] of [['tool-none',''],['tool-distance','distance'],['tool-zon
 $('tool-clear').addEventListener('click',()=>map.clearTool());
 $('tool-stop').addEventListener('click',()=>setMapTool(''));
 $('zone-more').addEventListener('click',()=>{zoneLimit+=pageSize();renderTools();});
-$('show-freshness').addEventListener('change',()=>{saveStored('atlas690-show-freshness',$('show-freshness').checked);updateFreshness();});
+$('show-freshness').addEventListener('change',()=>{saveStored(`${storagePrefix}-show-freshness`,$('show-freshness').checked);updateFreshness();});
 $('tool-form').addEventListener('submit',event=>{
   event.preventDefault();const values=['a','b'].map(prefix=>['x','y'].map(axis=>$('tool-'+prefix+'-'+axis).value));
   const points=values.map(([x,y])=>({x:Number(x),y:Number(y)}));
@@ -214,7 +227,7 @@ function select(row,center=true){
   content.append(el('span','eyebrow',row.uid!=null?(isForeign(row)?msg('detail.foreign_player','JOUEUR D’UN AUTRE ROYAUME'):msg('detail.player_castle','CHÂTEAU DE JOUEUR')):row.kind==='fixed'?msg('detail.kingdom_site','SITE DU ROYAUME'):msg('detail.alliance_building','BÂTIMENT D’ALLIANCE')),el('h2','',displayName(row)));
   const badge=el('span','alliance-badge'),dot=el('span','color-dot');dot.style.backgroundColor=allianceColor(row,alliances,customColors);
   badge.append(dot,document.createTextNode(row.alliance_abbr?'['+row.alliance_abbr+']':row.alliance_id?msg('detail.alliance_id','Alliance {{id}}',{id:row.alliance_id}):msg('detail.no_alliance','Sans alliance connue')));content.append(badge);
-  const stats=el('dl','detail-stats');stat(stats,msg('detail.position','POSITION'),`${row.x}, ${row.y}`);stat(stats,msg('detail.kingdom','ROYAUME'),'690');
+  const stats=el('dl','detail-stats');stat(stats,msg('detail.position','POSITION'),`${row.x}, ${row.y}`);stat(stats,msg('detail.kingdom','ROYAUME'),String(KINGDOM));
   const footprint=objectFootprint(row);
   stat(stats,msg('detail.footprint','EMPREINTE'),footprint.known?msg('detail.footprint_value',`${footprint.width}×${footprint.height} cases`,footprint):msg('detail.footprint_unknown','Inconnue · ancre seule'));
   if(footprint.known){stat(stats,msg('detail.cells_x','CASES X'),msg('detail.range',`${footprint.x} à ${footprint.maxX}`,{start:footprint.x,end:footprint.maxX}));stat(stats,msg('detail.cells_y','CASES Y'),msg('detail.range',`${footprint.y} à ${footprint.maxY}`,{start:footprint.y,end:footprint.maxY}));}
@@ -224,9 +237,9 @@ function select(row,center=true){
   if([34,36,37,38].includes(row.type))stat(stats,msg('detail.building_level','NIVEAU DU BÂTIMENT'),row.building_level==null?msg('detail.unknown_m','Inconnu'):row.building_level);
   if(row.type)stat(stats,'TYPE',row.type);if(row.flag_bg!=null)stat(stats,msg('detail.native_background','FOND NATIF'),row.flag_bg);if(row.conf_id!=null)stat(stats,msg('detail.configuration','CONFIGURATION'),row.conf_id);
   content.append(stats);
-  const actions=el('div','detail-actions');actions.append(action(msg('detail.coordinates','⌖ Coordonnées'),()=>copy(`K690 X:${row.x} Y:${row.y}`)),action(favorites.has(row.id)?msg('detail.favorite','★ Favori'):msg('detail.add_favorite','☆ Ajouter'),()=>{favorites.has(row.id)?favorites.delete(row.id):favorites.add(row.id);saveStored('atlas690-favorites',[...favorites]);if(tab==='favorites')applyTabLayers();select(row,false);update();}),action(msg('detail.local_link','↗ Lien local'),()=>copy(location.origin+'/#object='+encodeURIComponent(row.id))));
+  const actions=el('div','detail-actions');actions.append(action(msg('detail.coordinates','⌖ Coordonnées'),()=>copy(`K${KINGDOM} X:${row.x} Y:${row.y}`)),action(favorites.has(row.id)?msg('detail.favorite','★ Favori'):msg('detail.add_favorite','☆ Ajouter'),()=>{favorites.has(row.id)?favorites.delete(row.id):favorites.add(row.id);saveStored(`${storagePrefix}-favorites`,[...favorites]);if(tab==='favorites')applyTabLayers();select(row,false);update();}),action(msg('detail.local_link','↗ Lien local'),()=>copy(location.origin+location.pathname+'#object='+encodeURIComponent(row.id))));
   if(row.alliance_id)actions.append(action(msg('detail.view_alliance','Voir l’alliance'),()=>{filters.alliance=String(row.alliance_id);$('alliance').value=filters.alliance;filters.query='';$('search').value='';update();map.fit();toast(msg('detail.alliance_filtered','Carte filtrée sur cette alliance.'));}));content.append(actions);
-  if(row.alliance_id){const edit=el('label','color-edit',msg('detail.alliance_colour','Couleur locale de l’alliance')),input=el('input');input.type='color';input.value=allianceColor(row,alliances,customColors);input.setAttribute('aria-label',msg('detail.alliance_colour_aria','Couleur locale de cette alliance'));input.addEventListener('input',()=>{customColors[row.alliance_id]=input.value;saveStored('atlas690-colors',customColors);dot.style.backgroundColor=input.value;map.draw();renderResults();});edit.append(input);content.append(edit);}
+  if(row.alliance_id){const edit=el('label','color-edit',msg('detail.alliance_colour','Couleur locale de l’alliance')),input=el('input');input.type='color';input.value=allianceColor(row,alliances,customColors);input.setAttribute('aria-label',msg('detail.alliance_colour_aria','Couleur locale de cette alliance'));input.addEventListener('input',()=>{customColors[row.alliance_id]=input.value;saveStored(`${storagePrefix}-colors`,customColors);dot.style.backgroundColor=input.value;map.draw();renderResults();});edit.append(input);content.append(edit);}
   let note=msg('note.colour','Couleur locale personnalisable, pas une couleur native certifiée.');
   if(row.type===31)note+=' '+msg('note.hq','Image du QG attribuée par ressemblance (inférence).');
   if(row.type===35)note+=' '+msg('note.deposit','Gisement qui produit des ressources pour l’alliance ; ce n’est pas une mine de récolte sécurisée.');
@@ -259,9 +272,9 @@ $('labels').addEventListener('change',()=>{if(map.plan)map.planLabels=$('labels'
 $('hq-labels').addEventListener('change',()=>{map.hqLabels=$('hq-labels').checked;map.draw();});
 function updateGroundCaption(){$('ground-caption').textContent=map.plan?t('map.plan_caption'):map.backgroundMode==='mask'?t('map.mask_caption'):t('map.reconstructed_caption');$('royal-ground').disabled=map.plan||map.backgroundMode==='mask';}
 $('background-style').addEventListener('change',()=>{map.backgroundMode=$('background-style').value==='mask'?'mask':'reconstructed';updateGroundCaption();map.draw();});
-$('royal-ground').addEventListener('change',()=>{map.showRoyalGround=$('royal-ground').checked;saveStored('atlas690-royal-ground',map.showRoyalGround);map.draw();});
+$('royal-ground').addEventListener('change',()=>{map.showRoyalGround=$('royal-ground').checked;saveStored(`${storagePrefix}-royal-ground`,map.showRoyalGround);map.draw();});
 $('show-grid').addEventListener('change',()=>{map.showGrid=$('show-grid').checked;map.draw();});
-$('hover-coordinates').addEventListener('change',()=>{map.showHoverCoordinates=$('hover-coordinates').checked;saveStored('atlas690-hover-coordinates',map.showHoverCoordinates);map.draw();});
+$('hover-coordinates').addEventListener('change',()=>{map.showHoverCoordinates=$('hover-coordinates').checked;saveStored(`${storagePrefix}-hover-coordinates`,map.showHoverCoordinates);map.draw();});
 $('obstacles').addEventListener('change',()=>{map.showObstacles=$('obstacles').checked;map.draw();});
 $('site-zones').addEventListener('change',()=>{map.showSiteZones=$('site-zones').checked;map.draw();});
 $('inspect-terrain').addEventListener('change',()=>{if($('inspect-terrain').checked)setMapTool('');map.inspectMode=$('inspect-terrain').checked;map.hovered=null;map.draw();});
@@ -315,7 +328,7 @@ $('detail-expand').addEventListener('click',()=>{const expanded=!$('detail').cla
 $('about').addEventListener('click',()=>$('about-dialog').showModal());$('about-close').addEventListener('click',()=>$('about-dialog').close());
 $('about-dismiss').addEventListener('click',()=>$('about-dialog').close());
 document.addEventListener('keydown',event=>{if(event.key==='/'&&!['INPUT','SELECT','TEXTAREA'].includes(event.target.tagName)){event.preventDefault();mobileUI.setSidebar(true);$('search').focus();}if(event.key==='Escape'){if(map.toolMode)setMapTool('');mobileUI.close();$('detail').hidden=true;selected=map.selected=null;map.draw();}});
-$('export').addEventListener('click',()=>{if(!world)return;const value={kingdom:690,snapshot_at:world.meta.updated_at_utc,filters,colors:customColors,objects:results};const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='kingdom-690-selection.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast(msg('export.done',`${results.length} objets exportés.`,{count:formatNumber(results.length)}));});
+$('export').addEventListener('click',()=>{if(!world)return;const value={kingdom:KINGDOM,snapshot_at:world.meta.updated_at_utc,filters,colors:customColors,objects:results};const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=`kingdom-${KINGDOM}-selection.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast(msg('export.done',`${results.length} objets exportés.`,{count:formatNumber(results.length)}));});
 
 async function status(){
   canRefresh=false;
@@ -333,6 +346,7 @@ $('cancel').addEventListener('click',()=>toast(msg('refresh.disabled_access','Ac
 
 try{
   await initializeI18n();
+  applyRealmText();
   updateGroundCaption();
   setTab(tab,filters.quick);
   await loadWorld();await loadTerrain();await loadSiteZones();await status();
@@ -341,6 +355,7 @@ try{
 }catch(error){$('loading').replaceChildren(el('p','',error.message),action(msg('retry','Réessayer'),()=>location.reload(),'primary'));}
 
 document.addEventListener('atlas:localechange',()=>{
+  applyRealmText();
   if(!world)return;
   for(const preset of QUICK_FILTERS){const button=quickButtons.get(preset.id);if(button)button.textContent=translateSource(preset.label);}
   renderLocaleDependentWorldUI();

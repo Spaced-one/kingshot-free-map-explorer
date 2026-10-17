@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#122846">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="./assets/favicon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="description" content="Explorateur aérien du royaume 965 : joueurs, alliances et bâtiments Kingshot." data-i18n-content="document.description">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kingshot Tool">
+  <meta property="og:title" content="Kingshot Tool · Explorateur aérien du royaume 965">
+  <meta property="og:description" content="Explorez l’instantané local du royaume 965 : joueurs, alliances et bâtiments.">
+  <meta property="og:url" content="https://spaced-one.github.io/kingshot-free-map-explorer/r965.html">
+  <meta property="og:image" content="https://spaced-one.github.io/kingshot-free-map-explorer/assets/kingshot-tool-mark.png">
+  <meta property="og:image:alt" content="Kingshot Tool · Explorateur aérien du royaume 965">
+  <title>Explorateur aérien · Royaume 965</title><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./mobile.css">
+  <script src="./realm-965.js"></script><script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header id="topbar" class="topbar refresh-disabled">
+    <button id="menu" class="icon-button mobile-only" aria-label="Ouvrir ou fermer les outils" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="brand" href="./" aria-label="Accueil de l’explorateur aérien Kingshot" data-i18n-aria-label="brand.home"><img class="crest" src="./assets/kingshot-tool-mark.png" alt=""><span>KINGSHOT <b>TOOL</b><small data-i18n="brand.tagline">EXPLORATEUR AÉRIEN</small></span></a>
+    <div class="realm"><span class="status-dot"></span> <span data-i18n="header.kingdom">ROYAUME</span> <strong>#690</strong></div>
+    <label class="language-picker"><span class="sr-only" data-i18n="language.label">Langue</span><select id="locale" aria-label="Choisir la langue" data-i18n-aria-label="language.label"><option>Français</option></select></label>
+    <div class="top-actions"><span id="snapshot-date" class="snapshot-date">Chargement…</span><button id="refresh" class="primary" hidden>↻ <span>Actualiser</span></button></div>
+  </header>
+  <main>
+    <section id="map-area" class="map-area" aria-label="Carte interactive du royaume 690">
+      <button id="open-sidebar" class="sidebar-reopen" aria-label="Ouvrir les filtres" hidden>☰ <span>Filtres</span></button>
+      <canvas id="map" tabindex="0" aria-label="Carte. Glisser pour déplacer, molette pour zoomer. Les objets sont aussi accessibles dans la liste."></canvas>
+      <div class="map-heading"><span class="eyebrow" data-i18n="map.eyebrow">VOTRE FENÊTRE SUR LE ROYAUME</span><h1 data-i18n="map.heading">Le royaume, à portée de vue.</h1><span id="map-summary">Chargement de l’instantané</span></div>
+      <div id="view-controls" class="view-switch" aria-label="Vue de carte : 2D illustrée ou plan de dessus" data-i18n-aria-label="map.view_label"><button id="view-flat" class="active" aria-pressed="true" title="Sprites illustratifs, pas les dimensions occupées" data-i18n="map.flat" data-i18n-title="map.flat_title">2D illustrée</button><button id="view-plan" aria-pressed="false" title="Vue de dessus · empreintes sur la grille" data-i18n="map.plan" data-i18n-title="map.plan_title">Plan</button></div>
+      <details id="plan-note" class="plan-note" hidden open><summary><strong>PLAN · X ↗ / Y ↖</strong></summary><span>Rectangles = empreintes des objets reçus. X,Y = coin minimum ; point clair = ancre. Case survolée ou touchée en blanc. Noms au survol/toucher/clic ; cases X/Y au zoom rapproché.</span><small>C : château · D : drapeau · O : ours · G : gisement · MS : mine · B : autre bâtiment. « ? » : empreinte inconnue. Limites rouges ≠ bâtiments. Instantané, pas une autorisation de TP.</small></details>
+      <div id="map-controls" class="map-controls"><button id="zoom-in" aria-label="Zoom avant">＋</button><button id="zoom-out" aria-label="Zoom arrière">−</button><span></span><button id="fit" aria-label="Voir tout le royaume" title="Tout le royaume">▣</button><button id="home" aria-label="Configurer mon château" title="Configurer mon château">⌂</button><button id="home-settings" aria-label="Changer ou effacer mon château" title="Changer ou effacer mon château">⚙</button><button id="map-target" class="map-target" aria-label="Sélectionner le lieu ou la case au centre du viseur" title="Sélectionner le centre du viseur">⌖</button></div><div class="map-aim" aria-hidden="true"></div>
+      <div id="map-bottom" class="map-bottom"><span id="coordinates">X — · Y —</span><span id="scale">—</span><span id="ground-caption">Fond reconstruit · référence jeu</span></div>
+      <div id="tool-map-note" class="tool-map-note" hidden><span id="tool-map-hint" role="status"></span><button id="tool-stop" aria-label="Désactiver l’outil et revenir à la navigation" title="Revenir à la navigation">×</button></div>
+      <div id="loading" class="loading"><span class="crest">♜</span><p data-i18n="loading.open">Ouverture de l’explorateur aérien…</p></div>
+      <div id="empty-map" class="empty-map" hidden><span id="empty-message">Aucun objet avec ces filtres.</span><button id="reset-empty" data-i18n="actions.clear_filters">Effacer les filtres</button></div>
+    </section>
+    <button id="menu-shade" class="menu-shade" aria-label="Fermer les outils et revenir à la carte" hidden tabindex="-1"></button>
+    <aside id="sidebar" class="sidebar" aria-label="Recherche, filtres et outils de carte">
+      <div class="sidebar-title"><span class="eyebrow" data-i18n="sidebar.explore">EXPLORER</span><button id="close-menu" class="icon-button sidebar-close" aria-label="Fermer les filtres">×</button><h2 data-i18n="sidebar.heading">Trouvez votre destination.</h2></div>
+      <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Joueur, alliance, UID ou FID…" aria-label="Rechercher un joueur ou bâtiment" data-i18n-placeholder="search.placeholder" data-i18n-aria-label="search.label"><kbd>/</kbd></div>
+      <div class="tabs" role="tablist" aria-label="Catégorie" data-i18n-aria-label="tabs.label"><button data-tab="all" role="tab" aria-selected="true" class="active"><span data-i18n="tabs.all">Tout</span> <span id="all-count">—</span></button><button data-tab="players" role="tab" aria-selected="false"><span data-i18n="tabs.players">Joueurs</span> <span id="players-count">—</span></button><button data-tab="buildings" role="tab" aria-selected="false"><span data-i18n="tabs.buildings">Bâtiments</span> <span id="buildings-count">—</span></button><button data-tab="invasions" role="tab" aria-selected="false"><span data-i18n="tabs.invaders">Envahisseurs</span> <span id="invasions-count">—</span></button><button data-tab="favorites" role="tab" aria-selected="false" aria-label="Favoris" data-i18n-aria-label="tabs.favorites">★</button></div>
+      <p id="scope-summary" class="scope-summary" role="status"></p>
+      <p id="access-mode" class="scope-summary" hidden>Actualisation désactivée pour ce site. L’instantané reste consultable.</p>
+      <details class="layers" open><summary><span data-i18n="layers.heading">Calques de la carte</span> <span>⌄</span></summary><div id="layers"></div><label class="layer"><input id="labels" type="checkbox" checked><span>Noms au zoom rapproché</span></label><label class="layer hq-label-option"><input id="hq-labels" type="checkbox"><span>Noms des QG même en dézoom</span></label></details>
+      <details class="quick-tools" open><summary>Filtres rapides</summary><div id="quick-filters" class="quick-filters" role="group" aria-label="Filtres rapides de la carte"></div><details class="quick-more"><summary>Autres bâtiments et ressources</summary><div id="quick-filters-more" class="quick-filters" role="group" aria-label="Autres filtres rapides"></div></details><p>« Tout afficher » retire tous les filtres. Les raccourcis de type se combinent avec recherche et alliance.</p></details>
+      <details class="map-tools"><summary>Outils de carte · optionnels</summary>
+        <div class="tool-modes" role="group" aria-label="Action au clic sur la carte"><button id="tool-none" aria-pressed="true" class="active">Naviguer</button><button id="tool-distance" aria-pressed="false">Distance</button><button id="tool-zone" aria-pressed="false">Zone</button></div>
+        <div id="tool-panel" hidden><p id="tool-hint"></p>
+          <form id="tool-form"><fieldset><legend>Point A</legend><label>X<input id="tool-a-x" type="number" min="0" max="1199" step="1" required></label><label>Y<input id="tool-a-y" type="number" min="0" max="1199" step="1" required></label></fieldset><fieldset><legend>Point B</legend><label>X<input id="tool-b-x" type="number" min="0" max="1199" step="1" required></label><label>Y<input id="tool-b-y" type="number" min="0" max="1199" step="1" required></label></fieldset><button type="submit">Appliquer A/B</button></form>
+          <p id="tool-output" role="status"></p><button id="tool-clear" class="text-button">Effacer les points</button>
+          <section id="zone-panel" hidden aria-label="Objets dans la zone"><p id="zone-summary" role="status"></p><p id="zone-alliances"></p><div id="zone-results"></div><button id="zone-more" hidden>Afficher plus dans la zone</button></section>
+        </div>
+        <label class="layer freshness-option"><input id="show-freshness" type="checkbox"><span>Afficher l’âge de l’instantané</span></label><p id="snapshot-age" class="freshness-info" hidden></p><details id="snapshot-info" hidden><summary>Détails de l’instantané</summary><p id="snapshot-age-date"></p></details>
+      </details>
+      <div class="filters">
+        <label>ALLIANCE<select id="alliance"><option value="">Toutes les alliances</option></select></label>
+        <div class="filter-row"><label>NIVEAU MIN.<input id="min-level" type="number" min="1" max="80" placeholder="1"></label><label>NIVEAU MAX.<input id="max-level" type="number" min="1" max="80" placeholder="80"></label></div>
+      </div>
+      <section id="invasion-tools" class="invasion-tools" hidden aria-label="Outils envahisseurs"><label>ROYAUME D’ORIGINE<select id="origin-kingdom"><option value="">Tous les royaumes extérieurs</option></select></label><p id="invasion-summary"></p><small>« Envahisseurs » désigne ici les joueurs d’origine extérieure, sans présumer leur hostilité. Les origines inconnues sont exclues.</small></section>
+      <section class="background-settings"><label for="background-style">FOND DE CARTE</label><select id="background-style"><option value="reconstructed" data-i18n="background.reconstructed">Reconstruction · captures du jeu</option><option value="mask" data-i18n="background.mask">Masque logique · ancien fond</option></select><label class="layer royal-ground-option"><input id="royal-ground" type="checkbox" checked><span>Décor original · sol et remparts du château</span></label></section>
+      <div class="map-overlay-options" role="group" aria-label="Repères sur la carte"><label class="layer"><input id="show-grid" type="checkbox"><span>Grille de coordonnées · repères X/Y</span></label><label class="layer"><input id="hover-coordinates" type="checkbox" checked><span>Coordonnées colorées et report sur les axes · Plan</span></label><label class="layer"><input id="site-zones" type="checkbox" checked><span>Limites rouges · château, sanctuaires et forts</span></label></div>
+      <details class="terrain-tools" open><summary>Terrain original · contrôle 2×2</summary><label class="layer"><input id="obstacles" type="checkbox" checked><span>Afficher les exclusions statiques</span></label><label class="layer"><input id="inspect-terrain" type="checkbox"><span>Inspecter en cliquant sur la carte</span></label><div class="terrain-legend">Bleu : eau · Brun : montagne · Violet/rouge : zone interdite</div><form id="terrain-form"><input id="terrain-x" type="number" min="0" max="1199" placeholder="X" aria-label="Ancre X du château" required><input id="terrain-y" type="number" min="0" max="1199" placeholder="Y" aria-label="Ancre Y du château" required><button type="submit">Vérifier</button></form><p id="terrain-result" role="status">Chargement du masque original…</p><small>Aucune téléportation n’est envoyée. Une zone sans exclusion statique n’est pas nécessairement téléportable.</small></details>
+      <div class="results-heading"><span id="result-count">— résultats</span><button id="clear-filters" class="text-button" data-i18n="actions.reset">Réinitialiser</button></div>
+      <div id="results" class="results" aria-label="Résultats de recherche" tabindex="0"></div>
+      <button id="more" class="more" hidden data-i18n="actions.show_more">Afficher plus de résultats</button>
+      <div class="sidebar-footer"><form id="jump-form"><label for="jump-x" data-i18n="actions.go_to">Aller à</label><input id="jump-x" type="number" min="0" max="1199" placeholder="X" aria-label="Coordonnée X" required><input id="jump-y" type="number" min="0" max="1199" placeholder="Y" aria-label="Coordonnée Y" required><button type="submit" aria-label="Aller aux coordonnées">↗</button></form><div class="footer-actions"><button id="export" class="text-button" data-i18n="actions.export">↓ Exporter la sélection</button><button id="about" class="text-button" data-i18n="actions.about">Sources & limites</button></div></div>
+    </aside>
+    <div id="sidebar-resizer" class="sidebar-resizer" role="separator" aria-label="Redimensionner la largeur des outils" aria-orientation="vertical" tabindex="0"></div>
+    <aside id="detail" class="detail" hidden aria-label="Objet sélectionné"><div class="detail-toolbar"><button id="detail-close" class="detail-close" aria-label="Fermer la fiche">×</button><button id="detail-expand" class="detail-expand" aria-expanded="false" aria-controls="detail-content">Agrandir la fiche</button></div><div id="detail-content"></div></aside>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <div id="progress" class="progress" hidden><span id="progress-text"></span><progress id="progress-bar" max="400" value="0"></progress><button id="cancel" class="text-button">Arrêter</button></div>
+  <dialog id="refresh-dialog"><span class="eyebrow">NOUVEL INSTANTANÉ</span><h2>Relire le royaume 690 ?</h2><p>Cette action lit les 400 zones puis les alentours des QG au niveau détaillé (pièges à ours et autres bâtiments). Comptez environ 8–10 minutes. Votre jeu peut être déconnecté.</p><p>Aucune action de jeu n’est envoyée. Pas de collecte automatique ni d’essai répété après un refus. L’instantané actuel reste disponible.</p><div class="dialog-actions"><button id="refresh-no">Annuler</button><button id="refresh-yes" class="primary">Lancer la lecture</button></div></dialog>
+  <dialog id="home-dialog" aria-labelledby="home-title" aria-describedby="home-description">
+    <button id="home-dismiss" class="dialog-dismiss" aria-label="Fermer le choix de château">×</button>
+    <span class="eyebrow">PRÉFÉRENCE LOCALE · ROYAUME 690</span><h2 id="home-title">Mon château</h2>
+    <p id="home-description">Choisissez votre personnage parmi les joueurs présents dans cet instantané. Ce choix reste dans ce navigateur : il ne connecte aucun compte et ne change pas les filtres de la carte.</p>
+    <p id="home-current" role="status">Aucun château configuré.</p>
+    <label class="home-search-label" for="home-search">Rechercher un nom, une alliance, un UID ou un FID</label><input id="home-search" type="search" placeholder="Rechercher votre personnage…" autocomplete="off">
+    <p id="home-count" role="status"></p><div id="home-choices" aria-label="Personnages du royaume"></div>
+    <div class="dialog-actions"><button id="home-clear" hidden>Effacer le choix</button><button id="home-cancel">Fermer</button></div>
+  </dialog>
+  <dialog id="about-dialog">
+    <button id="about-dismiss" class="dialog-dismiss" aria-label="Fermer les sources et limites">×</button>
+    <span class="eyebrow" data-i18n="about.explorer_not_client">UN EXPLORATEUR, PAS LE CLIENT DU JEU</span><h2>Ce que vous voyez.</h2>
+    <p>Positions lues sur le serveur pour votre royaume 690. Il s’agit d’un instantané séquentiel, pas d’un suivi en temps réel ; seuls les objets visibles dans les réponses sont connus.</p>
+    <p><strong>Couverture :</strong> les 400 zones sont lues au LOD 1 pour les châteaux, drapeaux, QG et gisements. Une lecture LOD 0 des petites zones autour des QG repère les pièges à ours et les autres bâtiments d’alliance. Ces derniers peuvent être absents s’ils sont éloignés des QG : ce n’est pas un inventaire exhaustif.</p>
+    <p><strong>Terrain / TP :</strong> le masque original est identique au fichier récupéré avec REA dans le cache de l’émulateur. Le calque identifie les exclusions statiques et le contrôleur examine toute l’empreinte 2×2 d’un château. Une absence d’exclusion n’est pas une autorisation : occupation, terrain complémentaire, brouillard, conditions du joueur/alliance/guerre et validation serveur restent inconnus. Aucun TP n’est envoyé.</p>
+    <p><strong>Vue Plan :</strong> rectangles orthogonaux aux dimensions de la configuration du jeu, sans taille artificielle de sprite. X,Y indiquent le coin de coordonnées minimales ; un château2×2 à X676/Y402 couvre X676–677 et Y402–403. Les plages apparaissent dans la fiche et les cellules de l’objet sélectionné au zoom rapproché. Les zones de territoire/protection ne sont pas son empreinte. Une taille inconnue reste signalée comme telle. L’instantané n’établit ni l’occupation actuelle complète ni une autorisation de placement.</p>
+    <p><strong>Ressources :</strong> les gisements d’alliance (type 35) produisent des ressources pour l’alliance. Les mines sécurisées (type 39) sont des centres de récolte construits par l’alliance. Ce sont deux catégories distinctes. Les ressources classiques (type 2) ne sont pas exportées actuellement.</p>
+    <p><strong>Envahisseurs :</strong> l’onglet montre seulement les joueurs dont le royaume d’origine connu diffère de 690. Leur origine ne prouve pas leur hostilité ; une origine inconnue est exclue, jamais devinée. Les résultats décrivent l’instantané, pas la présence actuelle.</p>
+    <p><strong>Limites rouges :</strong> contours extérieurs des zones 8/9 du masque original, affichés sur les deux fonds. La couleur est explicative, pas un shader natif récupéré. Le masque 9 est interdit statiquement ; le masque 8 correspond aux zones spéciales des sites et n’est pas globalement interdit aux TP. Les états de territoire et de protection ne sont pas connus.</p>
+    <p><strong>Logos des sites fixes :</strong> sept logos de mini-carte sont extraits du cache du jeu : château central, quatre sanctuaires, fort moyen et tour. Leurs pixels sources sont connus ; le format de texture et les offsets de deux logos sont inférés, comme indiqué dans la provenance. Le logo du grand fort reste non récupéré et n’est pas remplacé par un autre bâtiment. Ce ne sont pas les modèles 3D natifs.</p>
+    <p><strong>Autres bâtiments :</strong> Arsenal, Mobilisation, Confrontation et mines sécurisées utilisent 13 logos originaux d’interface récupérés dans le cache (format ASTC inféré, pixels sources connus). Les variantes suivent le niveau ou la ressource lorsque ces données sont connues. Le niveau manque dans l’instantané actuel des bâtiments d’honneur : un logo de base est affiché avec une notice. Les banquets et tables restent sans visuel original récupéré.</p>
+    <p>Le fond reconstruit utilise la géographie du masque 1200 × 1200 et des couleurs mesurées dans vos captures du jeu : herbe, eau et berges. Il ne s’agit pas d’une texture native récupérée. Le relief reste illustratif, et les positions originales des arbres/rochers ne sont pas établies.</p>
+    <p>Les quatre gisements utilisent maintenant leurs visuels du jeu (moulin/ferme, scierie, carrière, fonderie), dans la carte, les résultats et les fiches. Leurs pixels sources sont vérifiés ; quelques champs de métadonnées reconstruits sont documentés dans la provenance. Les drapeaux, pièges à ours et certains châteaux utilisent aussi les sprites récupérés. Les skins manquants restent illustratifs ; l’affectation du sprite QG est inférée.</p>
+    <p><strong>Couleurs :</strong> les identifiants natifs <code>flag</code> / <code>flag_bg</code> sont conservés. Les fonds natifs n’étant pas récupérés, les couleurs affichées sont une palette locale par alliance, modifiable dans une fiche. Elles ne prétendent pas reproduire la couleur exacte du jeu.</p>
+    <p>Tous les bâtiments reçus sont conservés, y compris les gisements sans propriétaire. Les abréviations connues sont partagées entre les objets de la même alliance via son identifiant et précèdent le nom du joueur. Le nom complet de l’alliance n’est pas récupéré.</p>
+    <p>Le site reste local : accès Wi-Fi en lecture seule lorsqu’il est activé, actualisation réservée au Mac via127.0.0.1. Aucune publication ni outil d’analyse externe. Les fichiers d’authentification ne sont jamais servis.</p>
+    <a href="./assets/provenance.json" target="_blank" rel="noopener">Consulter la provenance des images ↗</a><div class="dialog-actions"><button id="about-close" class="primary">Compris</button></div>
+  </dialog>
+</body>
+</html>

@@ -192,8 +192,8 @@ export function unprojectPoint(x,y,cx,cy,zoom,width,height,iso=false,rotation=MA
   const dx=x-width/2,dy=y-height/2,m=projectionMatrix(zoom,iso,rotation,plan),det=m.a*m.d-m.b*m.c;
   return {x:cx+(m.d*dx-m.c*dy)/det,y:cy+(-m.b*dx+m.a*dy)/det};
 }
-export function validateSnapshot(world) {
-  if (!world || world.meta?.kingdom !== 690 || world.dimensions?.size !== 1200 || !Array.isArray(world.castles) || !Array.isArray(world.buildings) || !Array.isArray(world.alliances)) throw new Error('Instantané du royaume 690 invalide.');
+export function validateSnapshot(world, kingdom=690) {
+  if (!world || world.meta?.kingdom !== kingdom || world.dimensions?.size !== 1200 || !Array.isArray(world.castles) || !Array.isArray(world.buildings) || !Array.isArray(world.alliances)) throw new Error(`Instantané du royaume ${kingdom} invalide.`);
   for (const row of [...world.castles,...world.buildings,...(world.fixed || [])]) {
     if (!Number.isInteger(row.x) || !Number.isInteger(row.y) || row.x<0 || row.y<0 || row.x>=1200 || row.y>=1200 || typeof row.id !== 'string') throw new Error('Coordonnées invalides.');
   }
